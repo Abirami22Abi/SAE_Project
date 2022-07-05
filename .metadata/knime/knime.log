@@ -1,0 +1,14 @@
+2022-07-05 21:05:45,682 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-05 21:05:45,685 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-05 21:05:45,686 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-05 21:05:45,686 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-05 21:05:45,686 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-05 21:05:45,687 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-05 21:05:45,687 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-05 21:05:45,687 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-05 21:05:45,687 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-05 21:05:45,687 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-05 21:08:36,989 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No grouping column included. Aggregate complete table.
+2022-07-05 21:08:36,992 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-05 21:08:36,992 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-05 21:08:37,092 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column
