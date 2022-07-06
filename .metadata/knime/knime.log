@@ -12,3 +12,45 @@
 2022-07-05 21:08:36,992 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
 2022-07-05 21:08:36,992 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
 2022-07-05 21:08:37,092 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column
+2022-07-05 21:20:36,301 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-05 21:20:36,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-05 21:20:36,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-05 21:20:36,303 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-05 21:20:36,304 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-05 21:20:36,304 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-05 21:20:36,304 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-05 21:20:36,305 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-05 21:20:36,305 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-05 21:20:36,306 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-05 21:21:07,556 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No grouping column included. Aggregate complete table.
+2022-07-05 21:21:07,575 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-05 21:21:07,575 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-05 21:21:07,809 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-06 19:36:27,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-06 19:36:27,250 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-06 19:37:28,326 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No grouping column included. Aggregate complete table.
+2022-07-06 19:37:28,334 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 19:37:28,336 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 19:37:28,542 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column
+2022-07-06 21:33:00,294 : WARN  : main :  : Node : GroupBy : 0:34 : No grouping column included. Aggregate complete table.
+2022-07-06 21:33:00,297 : WARN  : main :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 21:33:00,297 : WARN  : main :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 21:33:00,297 : WARN  : main :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column
+2022-07-06 21:33:00,314 : WARN  : main :  : Node : Conditional Box Plot (local) : 0:19 : Selected nominal column has no domain values.
+2022-07-06 21:34:06,141 : WARN  : main :  : Node : GroupBy : 0:34 : No grouping column included. Aggregate complete table.
+2022-07-06 21:34:06,142 : WARN  : main :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 21:34:06,143 : WARN  : main :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 21:34:06,143 : WARN  : main :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column
+2022-07-06 21:34:06,146 : WARN  : main :  : Node : Conditional Box Plot (local) : 0:19 : Selected nominal column has no domain values.
+2022-07-06 21:34:08,558 : WARN  : KNIME-Worker-4-String Manipulation 0:21 :  : Node : GroupBy : 0:34 : No grouping column included. Aggregate complete table.
+2022-07-06 21:34:08,559 : WARN  : KNIME-Worker-4-String Manipulation 0:21 :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 21:34:08,559 : WARN  : KNIME-Worker-4-String Manipulation 0:21 :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 21:34:08,559 : WARN  : KNIME-Worker-4-String Manipulation 0:21 :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column

@@ -4,21 +4,37 @@
     "created": "2022-07-05 21:06",
     "nodestats": {
         "nodes": [
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory#CSV Reader",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 0,
+                "successor": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
+            },
+            {
+                "id": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 178,
+                "nrcreated": 0,
+                "successor": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
+            }
         ],
         "metaNodes": {
         },
         "wrappedNodes": {
         }
     },
-    "uptime": 274209,
-    "workflowsOpened": 1,
+    "uptime": 5355456,
+    "workflowsOpened": 3,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
-    "launches": 1,
+    "launches": 3,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 274216,
+    "timeSinceLastStart": 7032512,
     "crashes": 0,
     "properlyShutDown": true
 }
