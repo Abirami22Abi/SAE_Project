@@ -68,3 +68,54 @@
 2022-07-06 21:41:25,375 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
 2022-07-06 21:41:25,376 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
 2022-07-06 21:41:25,556 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column
+2022-07-06 21:55:45,664 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-06 21:55:45,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-06 21:55:45,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-06 21:55:45,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-06 21:55:45,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-06 21:55:45,665 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-06 21:55:45,666 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-06 21:55:45,666 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-06 21:55:45,666 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-06 21:55:45,666 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-06 21:55:56,652 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No grouping column included. Aggregate complete table.
+2022-07-06 21:55:56,653 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 21:55:56,654 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : No aggregation column defined
+2022-07-06 21:55:56,693 : WARN  : ModalContext :  : Node : GroupBy : 0:34 : Please select at least one group or aggregation column
+2022-07-06 22:00:04,168 : WARN  : KNIME-Worker-4-Missing Value 0:30 :  : Node : Missing Value : 0:30 : Column "Internet?" still contains missing values.
+2022-07-06 22:00:04,374 : WARN  : KNIME-Worker-5-Missing Value (Apply) 0:31 :  : Node : Missing Value (Apply) : 0:31 : Column "Internet?" still contains missing values.
+2022-07-06 22:06:59,706 : WARN  : KNIME-Worker-14-Missing Value 0:27 :  : Node : Missing Value : 0:27 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-07-06 22:16:15,468 : WARN  : ModalContext :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-06 22:17:01,080 : ERROR : KNIME-Worker-18-File Reader 3:1 :  : Node : File Reader : 3:1 : Execute failed: The specified file C:\Users\arulp\OneDrive\Desktop\YEAR 2 SEM 2\SAE\stats project\StudentPerformance.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\arulp\OneDrive\Desktop\YEAR 2 SEM 2\SAE\stats project\StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-06 22:50:17,244 : WARN  : main :  : Node : Numeric Binner : 0:37 : No column select for binning.
+2022-07-06 22:55:28,255 : WARN  : main :  : Node : String Manipulation : 0:37 : No such column: Annual Household Income level (at line 1)
+2022-07-06 22:59:18,526 : WARN  : AWT-EventQueue-0 :  : ColumnHandlingFactorySelectionPanel : Missing Value : 0:38 : get warnings during panel validation: [Some columns no longer exist (red bordered)]
+2022-07-06 23:01:38,276 : WARN  : AWT-EventQueue-0 :  : ColumnHandlingFactorySelectionPanel : Missing Value : 0:41 : get warnings during panel validation: [Some columns no longer exist (red bordered)]
+2022-07-06 23:28:36,738 : WARN  : main :  : Node : Numeric Binner : 0:39 : No column select for binning.
+2022-07-06 23:33:31,056 : WARN  : main :  : Node : Row Filter : 0:40 : Column range filter: Input table doesn't contain specified column name
+2022-07-06 23:35:47,470 : WARN  : main :  : Node : Conditional Box Plot (local) : 0:42 : Selected nominal column does not exist
+2022-07-06 23:36:27,028 : WARN  : main :  : Node : Box Plot (local) : 0:42 : Only numeric columns can be displayed! Found no numeric column.
+2022-07-06 23:36:29,351 : WARN  : main :  : Node : Box Plot (local) : 0:42 : Only numeric columns can be displayed! Found no numeric column.
+2022-07-06 23:36:56,522 : WARN  : main :  : Node : Value Counter : 0:42 : No column selected
+2022-07-06 23:58:20,201 : WARN  : main :  : Node : Linear Correlation : 0:44 : Auto configuration: Using all suitable columns (in total 3)
