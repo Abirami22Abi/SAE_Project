@@ -1,72 +1,72 @@
 
 {
-    "version": "4.5.2.v202203091352",
+    "version": "4.6.0.v202206091215",
     "created": "2022-07-05 21:06",
     "nodestats": {
         "nodes": [
             {
                 "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory#CSV Reader",
-                "nrexecs": 0,
+                "nrexecs": 1,
                 "nrfails": 0,
-                "exectime": 0,
+                "exectime": 73,
                 "nrcreated": 0,
                 "successor": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
             },
             {
                 "id": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation",
-                "nrexecs": 8,
+                "nrexecs": 12,
                 "nrfails": 0,
-                "exectime": 483,
+                "exectime": 568,
                 "nrcreated": 0,
-                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
+                "successor": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
             },
             {
                 "id": "org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory#Missing Value",
-                "nrexecs": 4,
+                "nrexecs": 6,
                 "nrfails": 0,
-                "exectime": 308,
+                "exectime": 553,
                 "nrcreated": 0,
                 "successor": "org.knime.base.node.preproc.pmml.missingval.apply.MissingValueApplyNodeFactory#Missing Value (Apply)"
             },
             {
                 "id": "org.knime.base.node.preproc.pmml.missingval.apply.MissingValueApplyNodeFactory#Missing Value (Apply)",
-                "nrexecs": 4,
+                "nrexecs": 6,
                 "nrfails": 0,
-                "exectime": 226,
+                "exectime": 447,
                 "nrcreated": 0,
                 "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
             },
             {
                 "id": "org.knime.base.node.viz.pie.node.fixed.FixedPieNodeFactory#Pie chart (local)",
-                "nrexecs": 2,
+                "nrexecs": 6,
                 "nrfails": 0,
-                "exectime": 78,
-                "nrcreated": 1,
+                "exectime": 140,
+                "nrcreated": 2,
                 "successor": "n/a"
             },
             {
                 "id": "org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter",
-                "nrexecs": 18,
+                "nrexecs": 30,
                 "nrfails": 0,
-                "exectime": 98,
+                "exectime": 215,
                 "nrcreated": 0,
-                "successor": "org.knime.base.node.stats.viz.extended.ExtendedStatisticsNodeFactory#Statistics"
+                "successor": "org.knime.base.node.preproc.valcount.ValueCounterNodeFactory#Value Counter"
             },
             {
                 "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
-                "nrexecs": 6,
+                "nrexecs": 10,
                 "nrfails": 0,
-                "exectime": 5,
+                "exectime": 13,
                 "nrcreated": 2,
-                "successor": "org.knime.base.node.preproc.correlation.filter.CorrelationFilterNodeFactory#Correlation Filter"
+                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
             },
             {
                 "id": "org.knime.base.node.preproc.binner.BinnerNodeFactory#Numeric Binner",
-                "nrexecs": 10,
+                "nrexecs": 15,
                 "nrfails": 0,
-                "exectime": 294,
+                "exectime": 308,
                 "nrcreated": 2,
-                "successor": "org.knime.base.node.stats.viz.extended.ExtendedStatisticsNodeFactory#Statistics"
+                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
             },
             {
                 "id": "org.knime.base.node.preproc.filter.nominal.NominalValueRowFilterNodeFactory#Nominal Value Row Filter",
@@ -94,9 +94,9 @@
             },
             {
                 "id": "org.knime.base.node.viz.condbox.ConditionalBoxPlotNodeFactory#Conditional Box Plot (local)",
-                "nrexecs": 10,
+                "nrexecs": 21,
                 "nrfails": 0,
-                "exectime": 76,
+                "exectime": 281,
                 "nrcreated": 1,
                 "successor": "org.knime.base.node.stats.viz.extended.ExtendedStatisticsNodeFactory#Statistics"
             },
@@ -126,9 +126,9 @@
             },
             {
                 "id": "org.knime.base.node.preproc.valcount.ValueCounterNodeFactory#Value Counter",
-                "nrexecs": 19,
+                "nrexecs": 21,
                 "nrfails": 0,
-                "exectime": 55,
+                "exectime": 64,
                 "nrcreated": 1,
                 "successor": "org.knime.base.node.viz.pie.node.interactive.InteractivePieNodeFactory#Interactive Pie chart (local)"
             },
@@ -158,10 +158,10 @@
             },
             {
                 "id": "org.knime.base.node.viz.pie.node.interactive.InteractivePieNodeFactory#Interactive Pie chart (local)",
-                "nrexecs": 3,
+                "nrexecs": 7,
                 "nrfails": 0,
-                "exectime": 9,
-                "nrcreated": 1,
+                "exectime": 37,
+                "nrcreated": 2,
                 "successor": "n/a"
             },
             {
@@ -179,6 +179,54 @@
                 "exectime": 1,
                 "nrcreated": 0,
                 "successor": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 420,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy",
+                "nrexecs": 5,
+                "nrfails": 0,
+                "exectime": 88,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart",
+                "nrexecs": 6,
+                "nrfails": 0,
+                "exectime": 234,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Stacked Area Chart",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 123,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Bar Chart",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 15,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.js.base.node.viz.plotter.lift.LiftChartNodeFactory#Lift Chart",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 20,
+                "nrcreated": 1,
+                "successor": "n/a"
             }
         ],
         "metaNodes": {
@@ -186,15 +234,16 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 6310896,
-    "workflowsOpened": 13,
+    "uptime": 266852,
+    "workflowsOpened": 16,
     "remoteWorkflowsOpened": 4,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
-    "launches": 9,
+    "webUIPerspectiveSwitches": 0,
+    "launches": 11,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 4005982,
+    "timeSinceLastStart": 2935376,
     "crashes": 0,
     "properlyShutDown": true
 }

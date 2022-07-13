@@ -79,7 +79,11 @@
         <entry key="threedim" type="xboolean" value="false"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Node can't be executed - Node &quot;Pie Chart (JFreeChart)&quot; not available from extension &quot;KNIME JFreeChart&quot; (provided by &quot;KNIME AG, Zurich, Switzerland&quot;; plugin &quot;org.knime.ext.jfreechart&quot; is not installed)"/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.ext.jfc.node.piechart.JfcPieChartNodeFactory"/>
     <entry key="node-name" type="xstring" value="Pie Chart (JFreeChart)"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME JFreeChart nodes"/>
@@ -91,15 +95,10 @@
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-feature-version" type="xstring" value="4.5.0.v202108241532"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="Pie Chart (JFreeChart)"/>
+    <entry key="name" type="xstring" value="MISSING Pie Chart (JFreeChart)"/>
     <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
-    <config key="ports">
-        <config key="port_1">
-            <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
-        </config>
-    </config>
+    <config key="ports"/>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
         <entry key="file_store_id" type="xstring" isnull="true" value=""/>

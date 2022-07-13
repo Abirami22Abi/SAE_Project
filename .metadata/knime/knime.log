@@ -291,3 +291,233 @@ org.knime.core.node.InvalidSettingsException: The specified file C:\Users\arulp\
 2022-07-13 18:27:48,731 : WARN  : main :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
 2022-07-13 18:27:53,224 : WARN  : KNIME-Worker-6-File Reader 3:1 :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
 2022-07-13 18:27:53,262 : WARN  : KNIME-Worker-7-String Manipulation 3:4 :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-13 18:56:47,577 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-13 18:56:47,579 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-13 18:56:47,579 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-13 18:56:47,580 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-13 18:56:47,580 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-13 18:56:47,580 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-13 18:56:47,580 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-13 18:56:47,581 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-13 18:56:47,581 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-13 18:56:47,581 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-13 18:57:28,420 : WARN  : ModalContext :  : Node : MISSING Pie Chart (JFreeChart) : 3:51 : Node can't be executed - Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-13 18:57:28,432 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: SAE_Project_Group3 3 loaded with errors
+2022-07-13 18:57:28,433 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: SAE_Project_Group3 3
+2022-07-13 18:57:28,433 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-13 18:57:28,434 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: MISSING Pie Chart (JFreeChart) 3:51
+2022-07-13 18:57:28,434 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2022-07-13 21:27:02,891 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-13 21:27:02,895 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-13 21:27:02,895 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-13 21:27:02,896 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-13 21:27:02,896 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-13 21:27:02,896 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-13 21:27:02,896 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-13 21:27:02,897 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-13 21:27:02,897 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-13 21:27:02,897 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-13 21:27:51,501 : WARN  : ModalContext :  : Node : MISSING Pie Chart (JFreeChart) : 3:51 : Node can't be executed - Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-13 21:27:51,514 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: SAE_Project_Group3 3 loaded with errors
+2022-07-13 21:27:51,516 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: SAE_Project_Group3 3
+2022-07-13 21:27:51,516 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-13 21:33:17,488 : ERROR : main :  : NativeNodeContainer : Numeric Binner : 4:39 : Can't load the node model settings: Final score: High check interval: left=80.0,oldright=-Infinity
+Final score: Medium check interval: left=60.0,oldright=Infinity
+Final score: Low check interval: left=-Infinity,oldright=80.0
+Final score: check last right interval value=60.0
+
+org.knime.core.node.InvalidSettingsException: Final score: High check interval: left=80.0,oldright=-Infinity
+Final score: Medium check interval: left=60.0,oldright=Infinity
+Final score: Low check interval: left=-Infinity,oldright=80.0
+Final score: check last right interval value=60.0
+
+	at org.knime.base.node.preproc.pmml.binner.BinnerNodeModel.validateSettings(BinnerNodeModel.java:420)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:692)
+	at org.knime.core.node.workflow.NativeNodeContainer.loadContent(NativeNodeContainer.java:1051)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodes(WorkflowManager.java:9011)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8583)
+	at org.knime.core.node.workflow.WorkflowManager.loadWorkflowContent(WorkflowManager.java:8595)
+	at org.knime.core.node.workflow.WorkflowManager.paste(WorkflowManager.java:8228)
+	at org.knime.core.ui.wrapper.WorkflowManagerWrapper.paste(WorkflowManagerWrapper.java:471)
+	at org.knime.workbench.editor2.commands.PasteFromWorkflowDefCommand.execute(PasteFromWorkflowDefCommand.java:138)
+	at org.eclipse.gef.commands.CommandStack.execute(CommandStack.java:228)
+	at org.knime.workbench.editor2.actions.PasteAction.runOnNodes(PasteAction.java:193)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:121)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:319)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:253)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:584)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:653)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:443)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1270)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1042)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1067)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1094)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1519)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4882)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4760)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2022-07-13 21:34:05,241 : ERROR : main :  : NativeNodeContainer : Numeric Binner : 4:39 : Can't load the node model settings: Final score: High check interval: left=80.0,oldright=-Infinity
+Final score: Medium check interval: left=60.0,oldright=Infinity
+Final score: Low check interval: left=-Infinity,oldright=80.0
+Final score: check last right interval value=60.0
+
+org.knime.core.node.InvalidSettingsException: Final score: High check interval: left=80.0,oldright=-Infinity
+Final score: Medium check interval: left=60.0,oldright=Infinity
+Final score: Low check interval: left=-Infinity,oldright=80.0
+Final score: check last right interval value=60.0
+
+	at org.knime.base.node.preproc.pmml.binner.BinnerNodeModel.validateSettings(BinnerNodeModel.java:420)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:692)
+	at org.knime.core.node.workflow.NativeNodeContainer.loadContent(NativeNodeContainer.java:1051)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodes(WorkflowManager.java:9011)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8583)
+	at org.knime.core.node.workflow.WorkflowManager.loadWorkflowContent(WorkflowManager.java:8595)
+	at org.knime.core.node.workflow.WorkflowManager.paste(WorkflowManager.java:8228)
+	at org.knime.core.ui.wrapper.WorkflowManagerWrapper.paste(WorkflowManagerWrapper.java:471)
+	at org.knime.workbench.editor2.commands.PasteFromWorkflowDefCommand.execute(PasteFromWorkflowDefCommand.java:138)
+	at org.eclipse.gef.commands.CommandStack.execute(CommandStack.java:228)
+	at org.knime.workbench.editor2.actions.PasteAction.runOnNodes(PasteAction.java:193)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4742)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2022-07-13 21:36:21,294 : WARN  : KNIME-Worker-5-Missing Value 4:46 :  : Node : Missing Value : 4:46 : Column "Internet?" still contains missing values.
+2022-07-13 21:36:21,624 : WARN  : KNIME-Worker-6-Missing Value (Apply) 4:47 :  : Node : Missing Value (Apply) : 4:47 : Column "Internet?" still contains missing values.
+2022-07-13 21:36:21,626 : WARN  : KNIME-Worker-6-Missing Value (Apply) 4:47 :  : Node : Numeric Binner : 4:39 : No column select for binning.
+2022-07-13 21:36:21,629 : WARN  : KNIME-Worker-6-Missing Value (Apply) 4:47 :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 21:36:21,630 : WARN  : KNIME-Worker-6-Missing Value (Apply) 4:47 :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 21:36:21,632 : WARN  : KNIME-Worker-7-Column Filter 4:38 :  : Node : Numeric Binner : 4:39 : No column select for binning.
+2022-07-13 21:36:21,641 : WARN  : KNIME-Worker-7-Row Filter 4:41 :  : Node : Row Filter : 4:41 : Node created an empty data table.
+2022-07-13 21:36:21,642 : WARN  : KNIME-Worker-7-Row Filter 4:41 :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 21:36:21,647 : WARN  : KNIME-Worker-8-Row Filter 4:40 :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 21:37:42,476 : WARN  : main :  : Node : Numeric Binner : 4:39 : No column select for binning.
+2022-07-13 21:37:42,477 : WARN  : main :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 21:37:42,478 : WARN  : main :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 21:37:49,427 : WARN  : KNIME-Worker-5-Column Filter 4:38 :  : Node : Numeric Binner : 4:39 : No column select for binning.
+2022-07-13 21:37:49,433 : WARN  : KNIME-Worker-5-Row Filter 4:41 :  : Node : Row Filter : 4:41 : Node created an empty data table.
+2022-07-13 21:37:49,434 : WARN  : KNIME-Worker-5-Row Filter 4:41 :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 21:37:49,439 : WARN  : KNIME-Worker-9-Row Filter 4:40 :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 21:38:37,963 : WARN  : main :  : Node : Pie chart (local) : 4:57 : Please select the pie column
+2022-07-13 21:41:56,438 : WARN  : main :  : Node : GroupBy : 4:59 : No grouping column included. Aggregate complete table.
+2022-07-13 21:41:56,438 : WARN  : main :  : Node : GroupBy : 4:59 : No aggregation column defined
+2022-07-13 21:41:56,439 : WARN  : main :  : Node : GroupBy : 4:59 : No aggregation column defined
+2022-07-13 21:41:56,439 : WARN  : main :  : Node : GroupBy : 4:59 : Please select at least one group or aggregation column
+2022-07-13 21:42:44,563 : WARN  : main :  : WrappedNodeDialog : GroupBy : 4:59 : failed to apply settings: No column selected.
+org.knime.core.node.InvalidSettingsException: No column selected.
+	at org.knime.base.data.aggregation.general.ColumnSelectorOperator$ColumnSelectorSettings.validate(ColumnSelectorOperator.java:250)
+	at org.knime.base.data.aggregation.general.ColumnSelectorOperator.validate(ColumnSelectorOperator.java:167)
+	at org.knime.base.data.aggregation.numerical.CorrelationOperator.validate(CorrelationOperator.java:296)
+	at org.knime.base.data.aggregation.dialogutil.AbstractAggregationPanel.validate(AbstractAggregationPanel.java:743)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.validateSettings(GroupByNodeDialog.java:631)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.saveSettingsTo(GroupByNodeDialog.java:604)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-13 21:52:52,639 : WARN  : KNIME-Worker-17-Missing Value 4:46 :  : Node : Missing Value : 4:46 : Column "Internet?" still contains missing values.
+2022-07-13 21:52:52,721 : WARN  : KNIME-Worker-18-Missing Value (Apply) 4:47 :  : Node : Missing Value (Apply) : 4:47 : Column "Internet?" still contains missing values.
+2022-07-13 21:52:52,723 : WARN  : KNIME-Worker-18-Missing Value (Apply) 4:47 :  : Node : Numeric Binner : 4:39 : No column select for binning.
+2022-07-13 21:52:52,726 : WARN  : KNIME-Worker-18-Missing Value (Apply) 4:47 :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 21:52:52,726 : WARN  : KNIME-Worker-18-Missing Value (Apply) 4:47 :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 21:52:52,744 : WARN  : KNIME-Worker-19-Column Filter 4:38 :  : Node : Numeric Binner : 4:39 : No column select for binning.
+2022-07-13 21:52:52,763 : WARN  : KNIME-Worker-19-Row Filter 4:40 :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 21:52:52,764 : WARN  : KNIME-Worker-18-Row Filter 4:41 :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 21:56:04,586 : WARN  : main :  : Node : Lift Chart : 4:61 : Auto-selected column Annual Household Income level as response column.
+2022-07-13 21:56:04,586 : WARN  : main :  : Node : Lift Chart : 4:61 : Auto-selected column Final score as probability column.
+2022-07-13 21:56:04,588 : WARN  : main :  : Node : Lift Chart : 4:61 : Response label must be set.
+2022-07-13 22:00:33,335 : WARN  : main :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 22:00:33,336 : WARN  : main :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 22:00:55,060 : WARN  : KNIME-Worker-41-Row Filter 4:40 :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 22:00:55,062 : WARN  : KNIME-Worker-40-Row Filter 4:41 :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
