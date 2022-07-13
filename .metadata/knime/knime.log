@@ -119,3 +119,175 @@ org.knime.core.node.InvalidSettingsException: The specified file C:\Users\arulp\
 2022-07-06 23:36:29,351 : WARN  : main :  : Node : Box Plot (local) : 0:42 : Only numeric columns can be displayed! Found no numeric column.
 2022-07-06 23:36:56,522 : WARN  : main :  : Node : Value Counter : 0:42 : No column selected
 2022-07-06 23:58:20,201 : WARN  : main :  : Node : Linear Correlation : 0:44 : Auto configuration: Using all suitable columns (in total 3)
+2022-07-07 12:11:16,436 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-07 12:11:16,440 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-07 12:11:16,440 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-07 12:11:16,440 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-07 12:11:16,441 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-07 12:11:16,441 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-07 12:11:16,441 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-07 12:11:16,442 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-07 12:11:16,442 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-07 12:11:16,442 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-09 11:50:49,178 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-09 11:50:49,181 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-09 11:50:49,182 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-09 11:50:49,182 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-09 11:50:49,183 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-09 11:50:49,183 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-09 11:50:49,183 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-09 11:50:49,184 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-09 11:50:49,184 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-09 11:50:49,185 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-09 11:51:26,809 : WARN  : ModalContext :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-09 11:52:43,041 : WARN  : main :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-09 12:11:17,531 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 0:21 : failed to apply settings: Unable to compile expression
+ERROR at line 67
+Syntax error, insert ";" to complete BlockStatements
+  Line : 66    public java.lang.String internalEvaluate() throws Abort {
+  Line : 67  return replace(replace(__col21,"Regular","Yes"),"Casual" ,"Yes" )
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 67
+Syntax error, insert ";" to complete BlockStatements
+  Line : 66    public java.lang.String internalEvaluate() throws Abort {
+  Line : 67  return replace(replace(__col21,"Regular","Yes"),"Casual" ,"Yes" )
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 67
+Syntax error, insert ";" to complete BlockStatements
+  Line : 66    public java.lang.String internalEvaluate() throws Abort {
+  Line : 67  return replace(replace(__col21,"Regular","Yes"),"Casual" ,"Yes" )
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-07-09 12:15:45,423 : WARN  : KNIME-Worker-11-Missing Value 0:46 :  : Node : Missing Value : 0:46 : Column "Internet?" still contains missing values.
+2022-07-09 12:15:45,610 : WARN  : KNIME-Worker-12-Missing Value (Apply) 0:47 :  : Node : Missing Value (Apply) : 0:47 : Column "Internet?" still contains missing values.
+2022-07-09 12:31:07,890 : WARN  : KNIME-Worker-15-Pie Chart (JFreeChart) 0:51 :  : Node : Pie Chart (JFreeChart) : 0:51 : Autoguessing : 
+2022-07-09 12:31:07,891 : ERROR : KNIME-Worker-15-Pie Chart (JFreeChart) 0:51 :  : Node : Pie Chart (JFreeChart) : 0:51 : Execute failed: No string column in input table
+org.knime.core.node.InvalidSettingsException: No string column in input table
+	at org.knime.ext.jfc.node.piechart.JfcPieChartNodeModel.createChart(JfcPieChartNodeModel.java:174)
+	at org.knime.ext.jfc.node.base.JfcBaseNodeModel.createChart(JfcBaseNodeModel.java:82)
+	at org.knime.ext.jfc.node.base.JfcGenericBaseNodeModel.execute(JfcGenericBaseNodeModel.java:273)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-09 12:57:28,817 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 0:1 : org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+java.util.concurrent.ExecutionException: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-09 13:03:17,951 : WARN  : ModalContext :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-13 17:37:47,046 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-13 17:37:47,047 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-13 17:37:47,048 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-13 17:37:47,048 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-13 17:37:47,048 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-13 17:37:47,049 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-13 17:37:47,049 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-13 17:37:47,049 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-13 17:37:47,049 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-13 17:37:47,050 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-13 17:44:59,925 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-13 17:44:59,927 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-13 17:44:59,927 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-13 17:44:59,929 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-13 17:44:59,929 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-13 17:44:59,929 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-13 17:44:59,929 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-13 17:44:59,929 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-13 17:44:59,929 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-13 17:44:59,929 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-13 18:00:36,443 : WARN  : KNIME-Worker-3-Pie Chart (JFreeChart) 0:51 :  : Node : Pie Chart (JFreeChart) : 0:51 : Autoguessing : Column Annual Household Income level is used!
+2022-07-13 18:12:46,752 : WARN  : main :  : Node : Conditional Box Plot (local) : 0:55 : No nominal column selected. Column Annual Household Income level chosen.
+No numeric column selected. Column Final score chosen.
+2022-07-13 18:26:26,665 : WARN  : ModalContext :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-13 18:27:12,253 : ERROR : KNIME-Worker-5-File Reader 3:1 :  : Node : File Reader : 3:1 : Execute failed: The specified file C:\Users\arulp\OneDrive\Desktop\YEAR 2 SEM 2\SAE\stats project\StudentPerformance.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file C:\Users\arulp\OneDrive\Desktop\YEAR 2 SEM 2\SAE\stats project\StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-13 18:27:48,731 : WARN  : main :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-13 18:27:53,224 : WARN  : KNIME-Worker-6-File Reader 3:1 :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-13 18:27:53,262 : WARN  : KNIME-Worker-7-String Manipulation 3:4 :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.

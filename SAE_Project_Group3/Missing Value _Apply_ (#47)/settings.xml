@@ -5,40 +5,15 @@
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
-    <config key="model">
-        <config key="Final score">
-            <config key="Low_0">
-                <entry key="bin_name" type="xstring" value="Low"/>
-                <entry key="left_open" type="xboolean" value="true"/>
-                <entry key="left_value" type="xdouble" value="-Infinity"/>
-                <entry key="right_open" type="xboolean" value="true"/>
-                <entry key="right_value" type="xdouble" value="60.0"/>
-            </config>
-            <config key="Medium_1">
-                <entry key="bin_name" type="xstring" value="Medium"/>
-                <entry key="left_open" type="xboolean" value="false"/>
-                <entry key="left_value" type="xdouble" value="60.0"/>
-                <entry key="right_open" type="xboolean" value="true"/>
-                <entry key="right_value" type="xdouble" value="80.0"/>
-            </config>
-            <config key="High_2">
-                <entry key="bin_name" type="xstring" value="High"/>
-                <entry key="left_open" type="xboolean" value="false"/>
-                <entry key="left_value" type="xdouble" value="80.0"/>
-                <entry key="right_open" type="xboolean" value="true"/>
-                <entry key="right_value" type="xdouble" value="Infinity"/>
-            </config>
-        </config>
-        <entry key="Final score_is_appended" type="xstring" value="Final score_binned"/>
-        <config key="binned_columns">
-            <entry key="array-size" type="xint" value="1"/>
-            <entry key="0" type="xstring" value="Final score"/>
-        </config>
-    </config>
+    <config key="model"/>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
-    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.binner.BinnerNodeFactory"/>
-    <entry key="node-name" type="xstring" value="Numeric Binner"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Column &quot;Internet?&quot; still contains missing values."/>
+    </config>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.apply.MissingValueApplyNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Missing Value (Apply)"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
@@ -48,7 +23,7 @@
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
     <entry key="node-feature-version" type="xstring" value="4.5.2.v202203141441"/>
     <config key="factory_settings"/>
-    <entry key="name" type="xstring" value="Numeric Binner"/>
+    <entry key="name" type="xstring" value="Missing Value (Apply)"/>
     <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
@@ -56,12 +31,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 314, Cols: 4"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 314, Cols: 23"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="20700c20-7f3e-45ee-9102-5882d1f0639a"/>
+        <entry key="file_store_id" type="xstring" value="8b7ddc22-18b9-416c-a1de-e02b41e87774"/>
     </config>
 </config>
