@@ -521,3 +521,82 @@ org.knime.core.node.InvalidSettingsException: No column selected.
 2022-07-13 22:00:33,336 : WARN  : main :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
 2022-07-13 22:00:55,060 : WARN  : KNIME-Worker-41-Row Filter 4:40 :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
 2022-07-13 22:00:55,062 : WARN  : KNIME-Worker-40-Row Filter 4:41 :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 22:45:28,487 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-13 22:45:28,493 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-13 22:45:28,494 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-13 22:45:28,494 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-13 22:45:28,495 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-13 22:45:28,496 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-13 22:45:28,496 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-13 22:45:28,496 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-13 22:45:28,497 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-13 22:45:28,497 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-13 22:46:21,657 : WARN  : ModalContext :  : Node : MISSING Pie Chart (JFreeChart) : 3:51 : Node can't be executed - Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-13 22:46:21,671 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: SAE_Project_Group3 3 loaded with errors
+2022-07-13 22:46:21,672 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: SAE_Project_Group3 3
+2022-07-13 22:46:21,672 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-13 22:49:29,472 : WARN  : ModalContext :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-13 22:49:29,484 : WARN  : ModalContext :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-13 23:02:04,895 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-13 23:02:04,898 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-13 23:02:04,898 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-13 23:02:04,899 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-13 23:02:04,899 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-13 23:02:04,899 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-13 23:02:04,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-13 23:02:04,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-13 23:02:04,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-13 23:02:04,900 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-13 23:03:50,286 : WARN  : ModalContext :  : Node : MISSING Pie Chart (JFreeChart) : 3:51 : Node can't be executed - Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-13 23:03:50,288 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: SAE_Project_Group3 3 loaded with errors
+2022-07-13 23:03:50,289 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: SAE_Project_Group3 3
+2022-07-13 23:03:50,289 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-14 00:40:09,732 : WARN  : main :  : Node : MISSING Pie Chart (JFreeChart) : 3:51 : Node can't be executed - Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-14 00:40:18,323 : WARN  : KNIME-Worker-5-Row Filter 3:40 :  : Node : MISSING Pie Chart (JFreeChart) : 3:51 : Node can't be executed - Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-14 08:47:02,204 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-14 08:47:31,055 : WARN  : ModalContext :  : Node : MISSING Pie Chart (JFreeChart) : 3:51 : Node can't be executed - Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-14 08:47:31,064 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: SAE_Project_Group3 3 loaded with errors
+2022-07-14 08:47:31,065 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: SAE_Project_Group3 3
+2022-07-14 08:47:31,065 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-14 09:05:53,150 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-14 09:05:53,160 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-14 09:06:43,919 : WARN  : ModalContext :  : Node : MISSING Pie Chart (JFreeChart) : 3:51 : Node can't be executed - Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-14 09:06:43,922 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: SAE_Project_Group3 3 loaded with errors
+2022-07-14 09:06:43,923 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: SAE_Project_Group3 3
+2022-07-14 09:06:43,923 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Pie Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2022-07-14 09:07:23,998 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-14 09:07:24,000 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-14 09:07:24,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-14 09:07:24,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-14 09:07:24,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-14 09:07:24,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-14 09:07:24,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-14 09:07:24,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-14 09:07:24,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-14 09:07:24,001 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-14 09:07:59,801 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: SAE_Project_Group3 3 loaded with warnings
+2022-07-14 09:07:59,802 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: SAE_Project_Group3 3
+2022-07-14 09:07:59,803 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Pie Chart (JFreeChart) 3:51
+2022-07-14 09:07:59,803 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from IDLE to CONFIGURED
+2022-07-14 09:08:12,344 : WARN  : KNIME-Worker-0-Pie Chart (JFreeChart) 3:51 :  : Node : Pie Chart (JFreeChart) : 3:51 : Autoguessing : Column Annual Household Income level is used!
+2022-07-14 09:21:48,801 : WARN  : KNIME-Worker-6-Pie Chart (JFreeChart) 3:51 :  : Node : Pie Chart (JFreeChart) : 3:51 : Autoguessing : Column Annual Household Income level is used!
+2022-07-14 09:44:05,642 : WARN  : KNIME-Worker-13-Pie Chart (JFreeChart) 3:51 :  : Node : Pie Chart (JFreeChart) : 3:51 : Autoguessing : Column Annual Household Income level is used!
+2022-07-14 09:47:04,484 : WARN  : ModalContext :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-14 09:47:04,486 : WARN  : ModalContext :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
