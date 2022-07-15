@@ -34,7 +34,7 @@
                 "nrfails": 0,
                 "exectime": 447,
                 "nrcreated": 0,
-                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
+                "successor": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2#Linear Regression Learner"
             },
             {
                 "id": "org.knime.base.node.viz.pie.node.fixed.FixedPieNodeFactory#Pie chart (local)",
@@ -134,10 +134,10 @@
             },
             {
                 "id": "org.knime.base.node.preproc.correlation.compute2.CorrelationCompute2NodeFactory#Linear Correlation",
-                "nrexecs": 1,
+                "nrexecs": 2,
                 "nrfails": 0,
-                "exectime": 73,
-                "nrcreated": 1,
+                "exectime": 116,
+                "nrcreated": 3,
                 "successor": "n/a"
             },
             {
@@ -153,7 +153,7 @@
                 "nrexecs": 5,
                 "nrfails": 1,
                 "exectime": 1165,
-                "nrcreated": 2,
+                "nrcreated": 3,
                 "successor": "n/a"
             },
             {
@@ -174,11 +174,11 @@
             },
             {
                 "id": "org.knime.base.node.viz.property.color.ColorManager2NodeFactory#Color Manager",
-                "nrexecs": 1,
+                "nrexecs": 2,
                 "nrfails": 0,
-                "exectime": 1,
-                "nrcreated": 0,
-                "successor": "n/a"
+                "exectime": 3,
+                "nrcreated": 1,
+                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
             },
             {
                 "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart",
@@ -190,18 +190,18 @@
             },
             {
                 "id": "org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy",
-                "nrexecs": 6,
+                "nrexecs": 14,
                 "nrfails": 0,
-                "exectime": 154,
+                "exectime": 479,
                 "nrcreated": 2,
-                "successor": "n/a"
+                "successor": "org.knime.ext.jfc.node.groupbarchart.JfcGroupBarChartNodeFactory#GroupBy Bar Chart (JFreeChart)"
             },
             {
                 "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart",
-                "nrexecs": 7,
+                "nrexecs": 15,
                 "nrfails": 0,
-                "exectime": 389,
-                "nrcreated": 2,
+                "exectime": 940,
+                "nrcreated": 3,
                 "successor": "n/a"
             },
             {
@@ -235,6 +235,62 @@
                 "exectime": 0,
                 "nrcreated": 1,
                 "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.io.database.columnrename.DBColumnRenameNodeFactory#Database Column Rename (legacy)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Box Plot",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 100,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Conditional Box Plot",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2#Linear Regression Learner",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 688,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.unpivot2.Unpivot2NodeFactory#Unpivoting",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 2,
+                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
+            },
+            {
+                "id": "org.knime.base.node.preproc.setoperator.SetOperatorNodeFactory#Set Operator",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.jfc.node.groupbarchart.JfcGroupBarChartNodeFactory#GroupBy Bar Chart (JFreeChart)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 636,
+                "nrcreated": 1,
+                "successor": "n/a"
             }
         ],
         "metaNodes": {
@@ -242,16 +298,16 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 158965,
-    "workflowsOpened": 23,
+    "uptime": 324003,
+    "workflowsOpened": 25,
     "remoteWorkflowsOpened": 4,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
-    "launches": 16,
+    "launches": 17,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 2543454,
+    "timeSinceLastStart": 5508052,
     "crashes": 0,
     "properlyShutDown": true
 }

@@ -600,3 +600,22 @@ org.knime.core.node.InvalidSettingsException: No column selected.
 2022-07-14 09:44:05,642 : WARN  : KNIME-Worker-13-Pie Chart (JFreeChart) 3:51 :  : Node : Pie Chart (JFreeChart) : 3:51 : Autoguessing : Column Annual Household Income level is used!
 2022-07-14 09:47:04,484 : WARN  : ModalContext :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
 2022-07-14 09:47:04,486 : WARN  : ModalContext :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-14 09:51:40,301 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-14 09:51:40,311 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-14 10:10:36,541 : WARN  : ModalContext :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-07-14 10:10:36,542 : WARN  : ModalContext :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-07-14 10:21:32,537 : ERROR : main :  : CEFWizardNodeView :  :  : Uncaught TypeError: Cannot read property 'length' of undefined (source: file:///C:/Users/abi09/AppData/Local/Temp/knimeViewContainer48228/index_165776528530717052018020958051663.html; line: 373)
+2022-07-14 10:21:34,339 : ERROR : main :  : CEFWizardNodeView :  :  : Uncaught TypeError: Cannot read property 'length' of undefined (source: file:///C:/Users/abi09/AppData/Local/Temp/knimeViewContainer48228/index_165776528530717052018020958051663.html; line: 373)
+2022-07-14 10:26:35,189 : ERROR : main :  : CEFWizardNodeView :  :  : Uncaught TypeError: Cannot read property 'length' of undefined (source: file:///C:/Users/abi09/AppData/Local/Temp/knimeViewContainer48228/index_165776558979613556247245824083215.html; line: 373)
+2022-07-14 10:30:37,403 : WARN  : main :  : Node : Linear Correlation : 3:68 : Auto configuration: Using all suitable columns (in total 23)
+2022-07-14 10:42:57,479 : ERROR : main :  : CEFWizardNodeView :  :  : Uncaught TypeError: Cannot read property 'length' of undefined (source: file:///C:/Users/abi09/AppData/Local/Temp/knimeViewContainer48228/index_165776558979613556247245824083215.html; line: 373)
+2022-07-14 10:50:02,888 : WARN  : main :  : Node : Unpivoting : 3:69 : Auto configuration: Using all suitable columns in Value and Retain column lists.
+2022-07-14 10:58:29,785 : WARN  : main :  : Node : Color Manager : 3:71 : Selected column "Final score_binned" with default nominal color mapping.
