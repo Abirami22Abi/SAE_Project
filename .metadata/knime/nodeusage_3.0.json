@@ -46,19 +46,19 @@
             },
             {
                 "id": "org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter",
-                "nrexecs": 38,
+                "nrexecs": 41,
                 "nrfails": 0,
-                "exectime": 417,
+                "exectime": 445,
                 "nrcreated": 0,
-                "successor": "org.knime.base.node.preproc.valcount.ValueCounterNodeFactory#Value Counter"
+                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
             },
             {
                 "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
-                "nrexecs": 12,
+                "nrexecs": 14,
                 "nrfails": 0,
                 "exectime": 83,
                 "nrcreated": 2,
-                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
+                "successor": "org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter"
             },
             {
                 "id": "org.knime.base.node.preproc.binner.BinnerNodeFactory#Numeric Binner",
@@ -66,7 +66,7 @@
                 "nrfails": 0,
                 "exectime": 508,
                 "nrcreated": 2,
-                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
+                "successor": "org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter"
             },
             {
                 "id": "org.knime.base.node.preproc.filter.nominal.NominalValueRowFilterNodeFactory#Nominal Value Row Filter",
@@ -198,10 +198,10 @@
             },
             {
                 "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart",
-                "nrexecs": 15,
+                "nrexecs": 26,
                 "nrfails": 0,
-                "exectime": 940,
-                "nrcreated": 3,
+                "exectime": 1381,
+                "nrcreated": 6,
                 "successor": "n/a"
             },
             {
@@ -270,10 +270,10 @@
             },
             {
                 "id": "org.knime.base.node.preproc.unpivot2.Unpivot2NodeFactory#Unpivoting",
-                "nrexecs": 0,
+                "nrexecs": 1,
                 "nrfails": 0,
-                "exectime": 0,
-                "nrcreated": 2,
+                "exectime": 119,
+                "nrcreated": 3,
                 "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
             },
             {
@@ -298,16 +298,16 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 324003,
-    "workflowsOpened": 25,
+    "uptime": 250717,
+    "workflowsOpened": 30,
     "remoteWorkflowsOpened": 4,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
-    "launches": 17,
+    "launches": 21,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 5508052,
+    "timeSinceLastStart": 5265062,
     "crashes": 0,
     "properlyShutDown": true
 }

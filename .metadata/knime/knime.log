@@ -619,3 +619,48 @@ org.knime.core.node.InvalidSettingsException: No column selected.
 2022-07-14 10:42:57,479 : ERROR : main :  : CEFWizardNodeView :  :  : Uncaught TypeError: Cannot read property 'length' of undefined (source: file:///C:/Users/abi09/AppData/Local/Temp/knimeViewContainer48228/index_165776558979613556247245824083215.html; line: 373)
 2022-07-14 10:50:02,888 : WARN  : main :  : Node : Unpivoting : 3:69 : Auto configuration: Using all suitable columns in Value and Retain column lists.
 2022-07-14 10:58:29,785 : WARN  : main :  : Node : Color Manager : 3:71 : Selected column "Final score_binned" with default nominal color mapping.
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-15 11:11:44,201 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-15 12:00:43,062 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-15 12:00:43,062 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-15 12:00:43,062 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-15 12:00:43,062 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-15 12:00:43,072 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-15 12:00:43,072 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-15 12:00:43,072 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-15 12:00:43,072 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-15 12:00:43,072 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-15 12:00:43,072 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-15 12:56:11,286 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-15 12:57:10,202 : WARN  : main :  : Node : Unpivoting : 3:70 : Auto configuration: Using all suitable columns in Value and Retain column lists.
+2022-07-15 12:59:48,288 : ERROR : main :  : CEFWizardNodeView :  :  : Uncaught ReferenceError: clearHighliting is not defined (source: file:///C:/Users/abi09/AppData/Local/Temp/knimeViewContainer5454/index_16578611750465523088814272970101.html; line: 1194)
+2022-07-15 12:59:49,298 : ERROR : main :  : CEFWizardNodeView :  :  : Uncaught ReferenceError: clearSelection is not defined (source: file:///C:/Users/abi09/AppData/Local/Temp/knimeViewContainer5454/index_16578611750465523088814272970101.html; line: 1185)
+2022-07-17 17:55:10,427 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-17 17:55:10,428 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-17 17:55:10,428 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-17 17:55:10,428 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-17 17:55:10,428 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-17 17:55:10,428 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-17 17:55:10,429 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-17 17:55:10,429 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-17 17:55:10,429 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-17 17:55:10,429 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-17 17:55:29,337 : WARN  : ModalContext :  : Node : Value Counter : 3:42 : Column 'Final score_binned' does not exist
+2022-07-17 17:55:29,338 : WARN  : ModalContext :  : Node : Value Counter : 3:49 : Column 'Final score_binned' does not exist

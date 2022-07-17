@@ -58,12 +58,12 @@
         </config>
     </config>
     <config key="nodeAnnotation">
-        <entry key="text" type="xstring" value="Focus on LownMid"/>
+        <entry key="text" type="xstring" value="Focus on %%00013%%00010Low and Middle%%00013%%00010rish students"/>
         <entry key="bgcolor" type="xint" value="16777215"/>
-        <entry key="x-coordinate" type="xint" value="1227"/>
-        <entry key="y-coordinate" type="xint" value="500"/>
-        <entry key="width" type="xint" value="108"/>
-        <entry key="height" type="xint" value="15"/>
+        <entry key="x-coordinate" type="xint" value="1027"/>
+        <entry key="y-coordinate" type="xint" value="439"/>
+        <entry key="width" type="xint" value="106"/>
+        <entry key="height" type="xint" value="45"/>
         <entry key="alignment" type="xstring" value="CENTER"/>
         <entry key="borderSize" type="xint" value="0"/>
         <entry key="borderColor" type="xint" value="16777215"/>
@@ -98,6 +98,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="35ae515a-8561-49ec-a0c8-e293941fedd0"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>
