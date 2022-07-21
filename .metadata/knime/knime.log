@@ -664,3 +664,1469 @@ org.knime.core.node.InvalidSettingsException: No column selected.
 2022-07-17 17:55:10,429 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
 2022-07-17 17:55:29,337 : WARN  : ModalContext :  : Node : Value Counter : 3:42 : Column 'Final score_binned' does not exist
 2022-07-17 17:55:29,338 : WARN  : ModalContext :  : Node : Value Counter : 3:49 : Column 'Final score_binned' does not exist
+2022-07-19 21:00:51,701 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-19 21:00:51,703 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-19 21:00:51,704 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-19 21:00:51,704 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-19 21:00:51,704 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-19 21:00:51,705 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-19 21:00:51,705 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-19 21:00:51,705 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-19 21:00:51,705 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-19 21:00:51,706 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-19 21:01:27,827 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-19 21:01:27,953 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-19 21:01:28,575 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: SAE_Project_Group3 0 loaded with warnings
+2022-07-19 21:01:28,575 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: SAE_Project_Group3 0
+2022-07-19 21:01:28,575 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: GroupBy 0:63
+2022-07-19 21:01:28,575 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-19 21:01:28,575 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: GroupBy 0:62
+2022-07-19 21:01:28,576 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-19 21:13:11,470 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 21:13:18,782 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:63 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 21:13:38,703 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 21:14:07,965 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 21:14:44,079 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 21:20:34,477 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 22:33:18,444 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-19 22:33:18,446 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-19 22:33:18,446 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-19 22:33:18,446 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-19 22:33:18,448 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-19 22:33:18,448 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-19 22:33:18,448 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-19 22:33:18,448 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-19 22:33:18,448 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-19 22:33:18,448 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-19 22:33:33,429 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-19 22:33:33,452 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-19 22:33:33,766 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: SAE_Project_Group3 0 loaded with warnings
+2022-07-19 22:33:33,766 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: SAE_Project_Group3 0
+2022-07-19 22:33:33,767 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: GroupBy 0:63
+2022-07-19 22:33:33,767 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-19 22:33:33,767 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: GroupBy 0:62
+2022-07-19 22:33:33,767 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-19 22:35:59,765 : ERROR : main :  : OutlierRemovalFactory$1 : Outlier Removal : 0:75 : Error loading model settings
+java.lang.NullPointerException
+	at de.mpicbg.knime.knutils.AttributeUtils.updateExcludeToNonSelected(AttributeUtils.java:169)
+	at de.mpicbg.knime.hcs.base.nodes.norm.AbstractScreenTrafoDialog.loadAdditionalSettingsFrom(AbstractScreenTrafoDialog.java:56)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadAdditionalSettingsFrom(DefaultNodeSettingsPane.java:324)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadSettingsFrom(DefaultNodeSettingsPane.java:276)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 22:36:15,266 : WARN  : main :  : Node : Outlier Removal : 0:75 : Could not load property 'SettingsModelBoolean ('inplace')'of node OutlierRemoval
+2022-07-19 22:36:15,267 : WARN  : main :  : OutlierRemoval : Outlier Removal : 0:75 : Could not load property 'SettingsModelBoolean ('inplace')'of node OutlierRemoval. 
+Please re-execute the node to get rid of this problem!
+2022-07-19 22:36:15,267 : WARN  : main :  : Node : Outlier Removal : 0:75 : Could not load property 'SettingsModelString ('group.wells.by')'of node OutlierRemoval
+2022-07-19 22:36:15,268 : WARN  : main :  : OutlierRemoval : Outlier Removal : 0:75 : Could not load property 'SettingsModelString ('group.wells.by')'of node OutlierRemoval. 
+Please re-execute the node to get rid of this problem!
+2022-07-19 22:37:10,866 : ERROR : main :  : OutlierRemovalFactory$1 : Outlier Removal : 0:75 : Error loading model settings
+java.lang.NullPointerException
+	at de.mpicbg.knime.knutils.AttributeUtils.updateExcludeToNonSelected(AttributeUtils.java:169)
+	at de.mpicbg.knime.hcs.base.nodes.norm.AbstractScreenTrafoDialog.loadAdditionalSettingsFrom(AbstractScreenTrafoDialog.java:56)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadAdditionalSettingsFrom(DefaultNodeSettingsPane.java:324)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadSettingsFrom(DefaultNodeSettingsPane.java:276)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 22:37:41,989 : WARN  : main :  : Node : Outlier Removal : 0:75 : Could not load property 'SettingsModelBoolean ('inplace')'of node OutlierRemoval
+2022-07-19 22:37:41,989 : WARN  : main :  : OutlierRemoval : Outlier Removal : 0:75 : Could not load property 'SettingsModelBoolean ('inplace')'of node OutlierRemoval. 
+Please re-execute the node to get rid of this problem!
+2022-07-19 22:37:41,990 : WARN  : main :  : Node : Outlier Removal : 0:75 : Could not load property 'SettingsModelString ('group.wells.by')'of node OutlierRemoval
+2022-07-19 22:37:41,990 : WARN  : main :  : OutlierRemoval : Outlier Removal : 0:75 : Could not load property 'SettingsModelString ('group.wells.by')'of node OutlierRemoval. 
+Please re-execute the node to get rid of this problem!
+2022-07-19 22:37:45,450 : ERROR : KNIME-Worker-5-Outlier Removal 0:75 :  : Node : Outlier Removal : 0:75 : Execute failed: matrix must have at least one column
+org.apache.commons.math3.exception.NoDataException: matrix must have at least one column
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.setSubMatrix(Array2DRowRealMatrix.java:286)
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.copyIn(Array2DRowRealMatrix.java:546)
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.<init>(Array2DRowRealMatrix.java:79)
+	at de.mpicbg.knime.hcs.base.utils.Table2Matrix.extractMatrix(Table2Matrix.java:61)
+	at de.mpicbg.knime.hcs.base.nodes.preproc.OutlierRemoval.execute(OutlierRemoval.java:122)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:758)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-19 22:37:49,391 : ERROR : main :  : OutlierRemovalFactory$1 : Outlier Removal : 0:75 : Error loading model settings
+java.lang.NullPointerException
+	at de.mpicbg.knime.knutils.AttributeUtils.updateExcludeToNonSelected(AttributeUtils.java:169)
+	at de.mpicbg.knime.hcs.base.nodes.norm.AbstractScreenTrafoDialog.loadAdditionalSettingsFrom(AbstractScreenTrafoDialog.java:56)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadAdditionalSettingsFrom(DefaultNodeSettingsPane.java:324)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadSettingsFrom(DefaultNodeSettingsPane.java:276)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 22:38:30,382 : ERROR : main :  : OutlierRemovalFactory$1 : Outlier Removal : 0:75 : Error loading model settings
+java.lang.NullPointerException
+	at de.mpicbg.knime.knutils.AttributeUtils.updateExcludeToNonSelected(AttributeUtils.java:169)
+	at de.mpicbg.knime.hcs.base.nodes.norm.AbstractScreenTrafoDialog.loadAdditionalSettingsFrom(AbstractScreenTrafoDialog.java:56)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadAdditionalSettingsFrom(DefaultNodeSettingsPane.java:324)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadSettingsFrom(DefaultNodeSettingsPane.java:276)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 22:38:58,344 : ERROR : main :  : OutlierRemovalFactory$1 : Outlier Removal : 0:75 : Error loading model settings
+java.lang.NullPointerException
+	at de.mpicbg.knime.knutils.AttributeUtils.updateExcludeToNonSelected(AttributeUtils.java:169)
+	at de.mpicbg.knime.hcs.base.nodes.norm.AbstractScreenTrafoDialog.loadAdditionalSettingsFrom(AbstractScreenTrafoDialog.java:56)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadAdditionalSettingsFrom(DefaultNodeSettingsPane.java:324)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadSettingsFrom(DefaultNodeSettingsPane.java:276)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 22:39:04,519 : WARN  : main :  : Node : Outlier Removal : 0:75 : Could not load property 'SettingsModelBoolean ('inplace')'of node OutlierRemoval
+2022-07-19 22:39:04,519 : WARN  : main :  : OutlierRemoval : Outlier Removal : 0:75 : Could not load property 'SettingsModelBoolean ('inplace')'of node OutlierRemoval. 
+Please re-execute the node to get rid of this problem!
+2022-07-19 22:39:04,520 : WARN  : main :  : Node : Outlier Removal : 0:75 : Could not load property 'SettingsModelString ('group.wells.by')'of node OutlierRemoval
+2022-07-19 22:39:04,520 : WARN  : main :  : OutlierRemoval : Outlier Removal : 0:75 : Could not load property 'SettingsModelString ('group.wells.by')'of node OutlierRemoval. 
+Please re-execute the node to get rid of this problem!
+2022-07-19 22:39:08,488 : ERROR : KNIME-Worker-6-Outlier Removal 0:75 :  : Node : Outlier Removal : 0:75 : Execute failed: matrix must have at least one column
+org.apache.commons.math3.exception.NoDataException: matrix must have at least one column
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.setSubMatrix(Array2DRowRealMatrix.java:286)
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.copyIn(Array2DRowRealMatrix.java:546)
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.<init>(Array2DRowRealMatrix.java:79)
+	at de.mpicbg.knime.hcs.base.utils.Table2Matrix.extractMatrix(Table2Matrix.java:61)
+	at de.mpicbg.knime.hcs.base.nodes.preproc.OutlierRemoval.execute(OutlierRemoval.java:122)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:758)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-19 22:41:01,982 : ERROR : main :  : OutlierRemovalFactory$1 : Outlier Removal : 0:75 : Error loading model settings
+java.lang.NullPointerException
+	at de.mpicbg.knime.knutils.AttributeUtils.updateExcludeToNonSelected(AttributeUtils.java:169)
+	at de.mpicbg.knime.hcs.base.nodes.norm.AbstractScreenTrafoDialog.loadAdditionalSettingsFrom(AbstractScreenTrafoDialog.java:56)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadAdditionalSettingsFrom(DefaultNodeSettingsPane.java:324)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadSettingsFrom(DefaultNodeSettingsPane.java:276)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 22:41:12,574 : WARN  : main :  : Node : Outlier Removal : 0:75 : Could not load property 'SettingsModelBoolean ('inplace')'of node OutlierRemoval
+2022-07-19 22:41:12,574 : WARN  : main :  : OutlierRemoval : Outlier Removal : 0:75 : Could not load property 'SettingsModelBoolean ('inplace')'of node OutlierRemoval. 
+Please re-execute the node to get rid of this problem!
+2022-07-19 22:41:12,575 : WARN  : main :  : Node : Outlier Removal : 0:75 : Could not load property 'SettingsModelString ('group.wells.by')'of node OutlierRemoval
+2022-07-19 22:41:12,575 : WARN  : main :  : OutlierRemoval : Outlier Removal : 0:75 : Could not load property 'SettingsModelString ('group.wells.by')'of node OutlierRemoval. 
+Please re-execute the node to get rid of this problem!
+2022-07-19 22:41:15,785 : ERROR : KNIME-Worker-8-Outlier Removal 0:75 :  : Node : Outlier Removal : 0:75 : Execute failed: matrix must have at least one column
+org.apache.commons.math3.exception.NoDataException: matrix must have at least one column
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.setSubMatrix(Array2DRowRealMatrix.java:286)
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.copyIn(Array2DRowRealMatrix.java:546)
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.<init>(Array2DRowRealMatrix.java:79)
+	at de.mpicbg.knime.hcs.base.utils.Table2Matrix.extractMatrix(Table2Matrix.java:61)
+	at de.mpicbg.knime.hcs.base.nodes.preproc.OutlierRemoval.execute(OutlierRemoval.java:122)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:758)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-19 22:41:25,081 : ERROR : KNIME-Worker-9-Outlier Removal 0:75 :  : Node : Outlier Removal : 0:75 : Execute failed: matrix must have at least one column
+org.apache.commons.math3.exception.NoDataException: matrix must have at least one column
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.setSubMatrix(Array2DRowRealMatrix.java:286)
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.copyIn(Array2DRowRealMatrix.java:546)
+	at org.apache.commons.math3.linear.Array2DRowRealMatrix.<init>(Array2DRowRealMatrix.java:79)
+	at de.mpicbg.knime.hcs.base.utils.Table2Matrix.extractMatrix(Table2Matrix.java:61)
+	at de.mpicbg.knime.hcs.base.nodes.preproc.OutlierRemoval.execute(OutlierRemoval.java:122)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:758)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-19 22:41:32,636 : ERROR : main :  : OutlierRemovalFactory$1 : Outlier Removal : 0:75 : Error loading model settings
+java.lang.NullPointerException
+	at de.mpicbg.knime.knutils.AttributeUtils.updateExcludeToNonSelected(AttributeUtils.java:169)
+	at de.mpicbg.knime.hcs.base.nodes.norm.AbstractScreenTrafoDialog.loadAdditionalSettingsFrom(AbstractScreenTrafoDialog.java:56)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadAdditionalSettingsFrom(DefaultNodeSettingsPane.java:324)
+	at org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane.loadSettingsFrom(DefaultNodeSettingsPane.java:276)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 22:42:48,965 : WARN  : main :  : Node : Numeric Outliers : 0:79 : Auto configuration: Outlier Selection uses all suitable columns (in total 1).
+2022-07-19 22:54:05,321 : WARN  : main :  : Node : Conditional Box Plot (local) : 0:76 : Selected nominal column does not exist
+2022-07-19 22:54:15,358 : WARN  : KNIME-Worker-22-Numeric Outliers 0:79 :  : Node : Conditional Box Plot (local) : 0:76 : Selected nominal column does not exist
+2022-07-19 22:57:07,439 : WARN  : ModalContext :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-19 22:57:39,291 : WARN  : main :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-19 22:57:42,542 : WARN  : KNIME-Worker-25-File Reader 3:1 :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-19 22:57:42,580 : WARN  : KNIME-Worker-26-String Manipulation 3:4 :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-19 23:24:47,243 : WARN  : main :  : Node : GroupBy : 0:63 : No grouping column included. Aggregate complete table.
+2022-07-19 23:24:47,244 : WARN  : main :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-19 23:24:47,244 : WARN  : main :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-19 23:24:47,244 : WARN  : main :  : Node : GroupBy : 0:63 : Please select at least one group or aggregation column
+2022-07-19 23:24:47,245 : WARN  : main :  : Node : GroupBy : 0:62 : No grouping column included. Aggregate complete table.
+2022-07-19 23:24:47,245 : WARN  : main :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-19 23:24:47,245 : WARN  : main :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-19 23:24:47,245 : WARN  : main :  : Node : GroupBy : 0:62 : Please select at least one group or aggregation column
+2022-07-19 23:24:51,640 : WARN  : KNIME-Worker-30-Numeric Binner 0:39 :  : Node : GroupBy : 0:63 : No grouping column included. Aggregate complete table.
+2022-07-19 23:24:51,640 : WARN  : KNIME-Worker-30-Numeric Binner 0:39 :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-19 23:24:51,640 : WARN  : KNIME-Worker-30-Numeric Binner 0:39 :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-19 23:24:51,640 : WARN  : KNIME-Worker-30-Numeric Binner 0:39 :  : Node : GroupBy : 0:63 : Please select at least one group or aggregation column
+2022-07-19 23:24:51,640 : WARN  : KNIME-Worker-30-Numeric Binner 0:39 :  : Node : GroupBy : 0:62 : No grouping column included. Aggregate complete table.
+2022-07-19 23:24:51,641 : WARN  : KNIME-Worker-30-Numeric Binner 0:39 :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-19 23:24:51,641 : WARN  : KNIME-Worker-30-Numeric Binner 0:39 :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-19 23:24:51,641 : WARN  : KNIME-Worker-30-Numeric Binner 0:39 :  : Node : GroupBy : 0:62 : Please select at least one group or aggregation column
+2022-07-19 23:25:03,308 : WARN  : main :  : Node : GroupBy : 0:63 : No grouping column included. Aggregate complete table.
+2022-07-19 23:25:03,308 : WARN  : main :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-19 23:25:03,308 : WARN  : main :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-19 23:25:03,309 : WARN  : main :  : Node : GroupBy : 0:63 : Please select at least one group or aggregation column
+2022-07-19 23:25:03,309 : WARN  : main :  : Node : GroupBy : 0:62 : No grouping column included. Aggregate complete table.
+2022-07-19 23:25:03,309 : WARN  : main :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-19 23:25:03,309 : WARN  : main :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-19 23:25:03,310 : WARN  : main :  : Node : GroupBy : 0:62 : Please select at least one group or aggregation column
+2022-07-19 23:25:06,732 : WARN  : KNIME-Worker-32-Numeric Binner 0:39 :  : Node : GroupBy : 0:63 : No grouping column included. Aggregate complete table.
+2022-07-19 23:25:06,732 : WARN  : KNIME-Worker-32-Numeric Binner 0:39 :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-19 23:25:06,733 : WARN  : KNIME-Worker-32-Numeric Binner 0:39 :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-19 23:25:06,733 : WARN  : KNIME-Worker-32-Numeric Binner 0:39 :  : Node : GroupBy : 0:63 : Please select at least one group or aggregation column
+2022-07-19 23:25:06,733 : WARN  : KNIME-Worker-32-Numeric Binner 0:39 :  : Node : GroupBy : 0:62 : No grouping column included. Aggregate complete table.
+2022-07-19 23:25:06,733 : WARN  : KNIME-Worker-32-Numeric Binner 0:39 :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-19 23:25:06,733 : WARN  : KNIME-Worker-32-Numeric Binner 0:39 :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-19 23:25:06,733 : WARN  : KNIME-Worker-32-Numeric Binner 0:39 :  : Node : GroupBy : 0:62 : Please select at least one group or aggregation column
+2022-07-19 23:34:24,800 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-19 23:36:29,204 : WARN  : ModalContext :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-19 23:36:46,878 : WARN  : main :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-19 23:36:50,518 : WARN  : KNIME-Worker-39-File Reader 3:1 :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-19 23:36:50,532 : WARN  : KNIME-Worker-40-String Manipulation 3:4 :  : Node : Conditional Box Plot (local) : 3:11 : Selected nominal column has no domain values.
+2022-07-20 00:31:28,705 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:63 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 00:31:38,483 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:63 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 00:31:46,238 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:63 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 19:04:23,065 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-20 19:04:23,066 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-20 19:04:23,066 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-20 19:04:23,067 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-20 19:04:23,067 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-20 19:04:23,067 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-20 19:04:23,067 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-20 19:04:23,067 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-20 19:04:23,067 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-20 19:04:23,067 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-20 19:04:42,181 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : No grouping column included. Aggregate complete table.
+2022-07-20 19:04:42,184 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-20 19:04:42,184 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-20 19:04:42,185 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : Please select at least one group or aggregation column
+2022-07-20 19:04:42,187 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : No grouping column included. Aggregate complete table.
+2022-07-20 19:04:42,187 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-20 19:04:42,188 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-20 19:04:42,188 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : Please select at least one group or aggregation column
+2022-07-20 19:04:50,150 : WARN  : ModalContext :  : Node : GroupBy : 3:59 : Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-20 19:04:50,380 : WARN  : ModalContext :  : Node : Value Counter : 3:42 : Column 'Final score_binned' does not exist
+2022-07-20 19:04:50,382 : WARN  : ModalContext :  : Node : Value Counter : 3:49 : Column 'Final score_binned' does not exist
+2022-07-20 19:04:50,544 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: KNIME_project 3 loaded with warnings
+2022-07-20 19:04:50,544 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: KNIME_project 3
+2022-07-20 19:04:50,544 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: GroupBy 3:59
+2022-07-20 19:04:50,544 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: Loading model settings failed: No method found for id: Mean_V4.6
+2022-07-20 19:05:32,090 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 19:20:00,244 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:63 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 19:20:07,431 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 19:35:13,724 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 0:1 : org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+java.util.concurrent.ExecutionException: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-20 19:35:13,912 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 0:1 : org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+java.util.concurrent.ExecutionException: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-20 19:35:14,166 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 0:1 : org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+java.util.concurrent.ExecutionException: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-20 19:35:14,377 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 0:1 : org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+java.util.concurrent.ExecutionException: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-20 19:35:15,283 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 0:1 : org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+java.util.concurrent.ExecutionException: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-07-20 20:06:34,710 : WARN  : main :  : Node : Numeric Outliers : 0:75 : Auto configuration: Outlier Selection uses all suitable columns (in total 1).
+2022-07-20 20:09:23,304 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 20:09:44,181 : WARN  : main :  : Node : GroupBy : 0:76 : No grouping column included. Aggregate complete table.
+2022-07-20 20:09:44,182 : WARN  : main :  : Node : GroupBy : 0:76 : No aggregation column defined
+2022-07-20 20:09:44,182 : WARN  : main :  : Node : GroupBy : 0:76 : No aggregation column defined
+2022-07-20 20:09:44,182 : WARN  : main :  : Node : GroupBy : 0:76 : Please select at least one group or aggregation column
+2022-07-20 20:09:44,947 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:76 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 20:10:05,124 : WARN  : main :  : Node : GroupBy : 0:62 : No grouping column included. Aggregate complete table.
+2022-07-20 20:10:05,125 : WARN  : main :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-20 20:10:05,125 : WARN  : main :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-20 20:10:05,125 : WARN  : main :  : Node : GroupBy : 0:62 : Please select at least one group or aggregation column
+2022-07-20 20:10:06,385 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 20:10:10,886 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:63 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 20:11:46,517 : WARN  : main :  : Node : GroupBy : 0:76 : No grouping column included. Aggregate complete table.
+2022-07-20 20:11:46,517 : WARN  : main :  : Node : GroupBy : 0:76 : No aggregation column defined
+2022-07-20 20:11:46,517 : WARN  : main :  : Node : GroupBy : 0:76 : No aggregation column defined
+2022-07-20 20:11:46,517 : WARN  : main :  : Node : GroupBy : 0:76 : Please select at least one group or aggregation column
+2022-07-20 20:11:48,936 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:76 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-20 20:13:08,696 : ERROR : KNIME-Worker-16-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-20 20:13:24,246 : ERROR : KNIME-Worker-17-CSV Reader 3:1 :  : Node : CSV Reader : 3:1 : Execute failed: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file /C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-20 20:13:37,620 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 3:1 : java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI.create(Unknown Source)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:122)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:100)
+	at org.knime.filehandling.core.defaultnodesettings.FileSystemHelper.retrieveFSConnection(FileSystemHelper.java:119)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getConnection(FileChooserPathAccessor.java:138)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.initializeFileSystem(FileChooserPathAccessor.java:145)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:162)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:293)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI$Parser.fail(Unknown Source)
+	at java.base/java.net.URI$Parser.checkChars(Unknown Source)
+	at java.base/java.net.URI$Parser.parse(Unknown Source)
+	at java.base/java.net.URI.<init>(Unknown Source)
+	... 19 more
+2022-07-20 20:13:37,823 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 3:1 : java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI.create(Unknown Source)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:122)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:100)
+	at org.knime.filehandling.core.defaultnodesettings.FileSystemHelper.retrieveFSConnection(FileSystemHelper.java:119)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getConnection(FileChooserPathAccessor.java:138)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.initializeFileSystem(FileChooserPathAccessor.java:145)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:162)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:293)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI$Parser.fail(Unknown Source)
+	at java.base/java.net.URI$Parser.checkChars(Unknown Source)
+	at java.base/java.net.URI$Parser.parse(Unknown Source)
+	at java.base/java.net.URI.<init>(Unknown Source)
+	... 19 more
+2022-07-20 20:13:38,029 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 3:1 : java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI.create(Unknown Source)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:122)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:100)
+	at org.knime.filehandling.core.defaultnodesettings.FileSystemHelper.retrieveFSConnection(FileSystemHelper.java:119)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getConnection(FileChooserPathAccessor.java:138)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.initializeFileSystem(FileChooserPathAccessor.java:145)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:162)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:293)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI$Parser.fail(Unknown Source)
+	at java.base/java.net.URI$Parser.checkChars(Unknown Source)
+	at java.base/java.net.URI$Parser.parse(Unknown Source)
+	at java.base/java.net.URI.<init>(Unknown Source)
+	... 19 more
+2022-07-20 20:13:38,211 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 3:1 : java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI.create(Unknown Source)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:122)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:100)
+	at org.knime.filehandling.core.defaultnodesettings.FileSystemHelper.retrieveFSConnection(FileSystemHelper.java:119)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getConnection(FileChooserPathAccessor.java:138)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.initializeFileSystem(FileChooserPathAccessor.java:145)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:162)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:293)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI$Parser.fail(Unknown Source)
+	at java.base/java.net.URI$Parser.checkChars(Unknown Source)
+	at java.base/java.net.URI$Parser.parse(Unknown Source)
+	at java.base/java.net.URI.<init>(Unknown Source)
+	... 19 more
+2022-07-20 20:13:39,319 : WARN  : AWT-EventQueue-0 :  : CSVFormatAutoDetectionSwingWorker : CSV Reader : 3:1 : java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.get(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.get(Unknown Source)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doneWithContext(CSVFormatAutoDetectionSwingWorker.java:135)
+	at org.knime.core.util.SwingWorkerWithContext.done(SwingWorkerWithContext.java:163)
+	at java.desktop/javax.swing.SwingWorker$5.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.run(Unknown Source)
+	at java.desktop/sun.swing.AccumulativeRunnable.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker$DoSubmitAccumulativeRunnable.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Unknown Source)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI.create(Unknown Source)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:122)
+	at org.knime.filehandling.core.connections.DefaultFSConnectionFactory.createCustomURLConnection(DefaultFSConnectionFactory.java:100)
+	at org.knime.filehandling.core.defaultnodesettings.FileSystemHelper.retrieveFSConnection(FileSystemHelper.java:119)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getConnection(FileChooserPathAccessor.java:138)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.initializeFileSystem(FileChooserPathAccessor.java:145)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getOutputPath(FileChooserPathAccessor.java:162)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:293)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.reader.ReadPathAccessor.getPaths(ReadPathAccessor.java:96)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:100)
+	at org.knime.base.node.io.filehandling.csv.reader.CSVFormatAutoDetectionSwingWorker.doInBackgroundWithContext(CSVFormatAutoDetectionSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 2: C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance%20(2).csv
+	at java.base/java.net.URI$Parser.fail(Unknown Source)
+	at java.base/java.net.URI$Parser.checkChars(Unknown Source)
+	at java.base/java.net.URI$Parser.parse(Unknown Source)
+	at java.base/java.net.URI.<init>(Unknown Source)
+	... 19 more
+2022-07-20 20:14:07,933 : WARN  : main :  : Node : GroupBy : 0:78 : No grouping column included. Aggregate complete table.
+2022-07-20 20:14:07,933 : WARN  : main :  : Node : GroupBy : 0:78 : No aggregation column defined
+2022-07-20 20:14:07,934 : WARN  : main :  : Node : GroupBy : 0:78 : No aggregation column defined
+2022-07-20 20:14:07,934 : WARN  : main :  : Node : GroupBy : 0:78 : Please select at least one group or aggregation column
+2022-07-20 20:14:43,563 : WARN  : main :  : Node : GroupBy : 0:78 : No aggregation column defined
+2022-07-20 20:14:43,564 : WARN  : main :  : Node : GroupBy : 0:78 : No aggregation column defined
+2022-07-20 20:14:43,564 : WARN  : main :  : Node : GroupBy : 0:78 : All columns selected as group by column
+2022-07-20 20:15:22,600 : WARN  : KNIME-Worker-18-Column Filter 0:77 :  : Node : GroupBy : 0:78 : No aggregation column defined
+2022-07-20 20:15:22,601 : WARN  : KNIME-Worker-18-Column Filter 0:77 :  : Node : GroupBy : 0:78 : No aggregation column defined
+2022-07-20 20:15:22,602 : WARN  : KNIME-Worker-18-Column Filter 0:77 :  : Node : GroupBy : 0:78 : All columns selected as group by column
+2022-07-20 20:19:39,518 : WARN  : main :  : Node : Conditional Box Plot (local) : 0:79 : Selected nominal column does not exist
+2022-07-20 20:36:11,456 : WARN  : ModalContext :  : Node : Conditional Box Plot (local) : 4:11 : Selected nominal column has no domain values.
+2022-07-20 20:36:20,181 : WARN  : main :  : Node : Conditional Box Plot (local) : 4:11 : Selected nominal column has no domain values.
+2022-07-20 20:36:27,174 : WARN  : KNIME-Worker-36-File Reader 4:1 :  : Node : Conditional Box Plot (local) : 4:11 : Selected nominal column has no domain values.
+2022-07-20 20:36:27,198 : WARN  : KNIME-Worker-37-String Manipulation 4:4 :  : Node : Conditional Box Plot (local) : 4:11 : Selected nominal column has no domain values.
+2022-07-20 20:39:31,265 : WARN  : main :  : Node : Crosstab (local) : 0:80 : Auto guessing: using column "No".
+2022-07-20 20:39:31,265 : WARN  : main :  : Node : Crosstab (local) : 0:80 : No column with allowed type (eg. Double, Integer) in input table.
+2022-07-20 20:54:08,153 : WARN  : main :  : Node : Numeric Outliers : 0:75 : Please include at least one numerical column
+2022-07-21 20:33:35,134 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-21 20:33:35,136 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-21 20:33:35,136 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-21 20:33:35,136 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-21 20:33:35,136 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-21 20:33:35,136 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-21 20:33:35,136 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-21 20:33:35,136 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-21 20:33:35,137 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-21 20:33:35,137 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-21 20:33:49,208 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : No grouping column included. Aggregate complete table.
+2022-07-21 20:33:49,210 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-21 20:33:49,210 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : No aggregation column defined
+2022-07-21 20:33:49,212 : WARN  : ModalContext :  : Node : GroupBy : 0:62 : Please select at least one group or aggregation column
+2022-07-21 20:33:49,294 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : No grouping column included. Aggregate complete table.
+2022-07-21 20:33:49,296 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-21 20:33:49,296 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : No aggregation column defined
+2022-07-21 20:33:49,296 : WARN  : ModalContext :  : Node : GroupBy : 0:63 : Please select at least one group or aggregation column
+2022-07-21 22:15:06,514 : WARN  : main :  : Node : Pie chart (local) : 0:76 : Please select the pie column
+2022-07-21 22:16:51,434 : WARN  : KNIME-Worker-6-Pie Chart (JFreeChart) 0:77 :  : Node : Pie Chart (JFreeChart) : 0:77 : Autoguessing : 
+2022-07-21 22:16:51,440 : ERROR : KNIME-Worker-6-Pie Chart (JFreeChart) 0:77 :  : Node : Pie Chart (JFreeChart) : 0:77 : Execute failed: No string column in input table
+org.knime.core.node.InvalidSettingsException: No string column in input table
+	at org.knime.ext.jfc.node.piechart.JfcPieChartNodeModel.createChart(JfcPieChartNodeModel.java:174)
+	at org.knime.ext.jfc.node.base.JfcBaseNodeModel.createChart(JfcBaseNodeModel.java:82)
+	at org.knime.ext.jfc.node.base.JfcGenericBaseNodeModel.execute(JfcGenericBaseNodeModel.java:273)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-07-21 22:18:34,805 : WARN  : main :  : Node : Color Manager : 0:77 : Selected column "Final score_binned" with default nominal color mapping.
+2022-07-21 22:36:18,631 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-21 22:37:07,647 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-21 22:37:12,886 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-21 22:37:20,961 : ERROR : main :  : GroupByNodeDialog : GroupBy : 0:62 : Error loading model settings
+java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
+	at org.knime.base.data.aggregation.AggregationMethods.getMethod4Id(AggregationMethods.java:740)
+	at org.knime.base.data.aggregation.ColumnAggregator.loadColumnAggregators(ColumnAggregator.java:282)
+	at org.knime.base.data.aggregation.dialogutil.column.AggregationColumnPanel.loadSettingsFrom(AggregationColumnPanel.java:405)
+	at org.knime.base.node.preproc.groupby.GroupByNodeDialog.loadSettingsFrom(GroupByNodeDialog.java:553)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-07-21 22:38:01,940 : WARN  : main :  : Node : GroupBy : 0:80 : No grouping column included. Aggregate complete table.
+2022-07-21 22:38:01,940 : WARN  : main :  : Node : GroupBy : 0:80 : No aggregation column defined
+2022-07-21 22:38:01,940 : WARN  : main :  : Node : GroupBy : 0:80 : No aggregation column defined
+2022-07-21 22:38:01,941 : WARN  : main :  : Node : GroupBy : 0:80 : Please select at least one group or aggregation column
+2022-07-21 22:39:43,199 : WARN  : main :  : Node : GroupBy : 0:80 : No grouping column included. Aggregate complete table.
+2022-07-21 22:39:43,199 : WARN  : main :  : Node : GroupBy : 0:80 : No aggregation column defined
+2022-07-21 22:39:43,200 : WARN  : main :  : Node : GroupBy : 0:80 : No aggregation column defined
+2022-07-21 22:39:43,200 : WARN  : main :  : Node : GroupBy : 0:80 : Please select at least one group or aggregation column
