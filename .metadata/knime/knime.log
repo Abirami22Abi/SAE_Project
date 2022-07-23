@@ -2150,3 +2150,13 @@ java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
 2022-07-22 13:00:40,861 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
 2022-07-22 13:00:40,861 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
 2022-07-22 13:00:40,861 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-07-22 22:09:24,235 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-07-22 22:09:24,239 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-07-22 22:09:24,239 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-07-22 22:09:24,239 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-07-22 22:09:24,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-07-22 22:09:24,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-07-22 22:09:24,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-07-22 22:09:24,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-07-22 22:09:24,241 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-07-22 22:09:24,241 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  

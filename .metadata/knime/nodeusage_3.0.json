@@ -46,9 +46,9 @@
             },
             {
                 "id": "org.knime.base.node.preproc.filter.row.RowFilterNodeFactory#Row Filter",
-                "nrexecs": 45,
+                "nrexecs": 46,
                 "nrfails": 0,
-                "exectime": 608,
+                "exectime": 624,
                 "nrcreated": 0,
                 "successor": "org.knime.base.node.viz.property.color.ColorManager2NodeFactory#Color Manager"
             },
@@ -94,9 +94,9 @@
             },
             {
                 "id": "org.knime.base.node.viz.condbox.ConditionalBoxPlotNodeFactory#Conditional Box Plot (local)",
-                "nrexecs": 57,
+                "nrexecs": 58,
                 "nrfails": 0,
-                "exectime": 561,
+                "exectime": 726,
                 "nrcreated": 1,
                 "successor": "org.knime.base.node.stats.viz.extended.ExtendedStatisticsNodeFactory#Statistics"
             },
@@ -198,9 +198,9 @@
             },
             {
                 "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart",
-                "nrexecs": 27,
+                "nrexecs": 28,
                 "nrfails": 0,
-                "exectime": 1437,
+                "exectime": 1645,
                 "nrcreated": 6,
                 "successor": "n/a"
             },
@@ -330,16 +330,16 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 48912,
-    "workflowsOpened": 41,
+    "uptime": 276955,
+    "workflowsOpened": 42,
     "remoteWorkflowsOpened": 7,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
-    "launches": 27,
+    "launches": 28,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 1320649,
+    "timeSinceLastStart": 7754743,
     "crashes": 0,
     "properlyShutDown": true
 }

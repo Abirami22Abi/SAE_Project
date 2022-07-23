@@ -66,7 +66,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_Z1rVyvxnEeyq4MJrblW0zw" containerData="7606" selectedElement="_Z1rVy_xnEeyq4MJrblW0zw">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_Z1rVy_xnEeyq4MJrblW0zw" containerData="7452" selectedElement="_Z1rVzPxnEeyq4MJrblW0zw" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_Z1rVy_xnEeyq4MJrblW0zw" containerData="7312" selectedElement="_Z1rVzPxnEeyq4MJrblW0zw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_Z1rVzPxnEeyq4MJrblW0zw" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_Z1IjMPxnEeyq4MJrblW0zw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_Z1rVzfxnEeyq4MJrblW0zw" elementId="org.knime.workbench.helpviewMStack" containerData="1000" selectedElement="_Z1rVzvxnEeyq4MJrblW0zw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_Z1rVzvxnEeyq4MJrblW0zw" elementId="org.knime.workbench.helpview" ref="_Z1nrYPxnEeyq4MJrblW0zw" closeable="true">
@@ -79,7 +79,7 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_Z1rV0PxnEeyq4MJrblW0zw" containerData="2548" selectedElement="_Z1rV0_xnEeyq4MJrblW0zw" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_Z1rV0PxnEeyq4MJrblW0zw" containerData="2688" selectedElement="_Z1rV0fxnEeyq4MJrblW0zw" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_Z1rV0fxnEeyq4MJrblW0zw" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="3000" selectedElement="_Z1rV0vxnEeyq4MJrblW0zw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_Z1rV0vxnEeyq4MJrblW0zw" elementId="org.eclipse.ui.views.ContentOutline" ref="_Z1nEUPxnEeyq4MJrblW0zw" closeable="true">
                     <tags>View</tags>
@@ -1292,7 +1292,7 @@
   <addons xmi:id="_YX9alvxnEeyq4MJrblW0zw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_YX9al_xnEeyq4MJrblW0zw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_YYSxwPxnEeyq4MJrblW0zw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_FcR7kAnMEe2kgPtOAsjrMg" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_YbiTAPxnEeyq4MJrblW0zw" elementId="org.knime.product.addon.0" contributorURI="platform:/plugin/org.knime.product" contributionURI="bundleclass://org.knime.product/org.knime.product.rcp.addons.PerspectiveFixAddon"/>
   <addons xmi:id="_YbiTAfxnEeyq4MJrblW0zw" elementId="org.knime.product.addon.1" contributorURI="platform:/plugin/org.knime.product" contributionURI="bundleclass://org.knime.product/org.knime.product.rcp.addons.MenuFixesAddon"/>
