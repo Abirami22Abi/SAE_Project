@@ -2160,3 +2160,268 @@ java.lang.IllegalArgumentException: No method found for id: Mean_V4.6
 2022-07-22 22:09:24,240 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
 2022-07-22 22:09:24,241 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
 2022-07-22 22:09:24,241 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-01 19:01:16,801 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-01 19:01:16,803 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-01 19:01:16,803 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-01 19:01:16,804 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-01 19:01:16,804 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-01 19:01:16,804 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-01 19:01:16,804 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityException
+2022-08-01 19:01:16,804 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-01 19:01:16,804 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-01 19:05:13,393 : ERROR : Clear OSGi configuration :  : InvokeUpdateAction :  :  : Could not clean OSGi configuration area: C:\Program Files\KNIME\configuration\org.eclipse.osgi\282\0\.cp\os\win32\x86_64\localfile_1_0_0.dll
+2022-08-01 19:05:35,042 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-01 19:05:35,049 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-01 19:05:35,051 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-01 19:05:35,051 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-01 19:05:35,052 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-01 19:05:35,053 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-01 19:05:35,054 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityException
+2022-08-01 19:05:35,055 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-01 19:05:35,055 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-02 19:37:07,715 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-02 19:37:07,716 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-02 19:37:07,716 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-02 19:37:07,717 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-02 19:37:07,717 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-02 19:37:07,717 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-02 19:37:07,717 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityException
+2022-08-02 19:37:07,717 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-02 19:37:07,717 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-02 20:03:05,336 : WARN  : main :  : Node : String Manipulation : 3:83 : No expression has been set.
+2022-08-02 20:06:33,061 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:83 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" )
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" )
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" )
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-02 20:06:47,217 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:83 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" )
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" )
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" )
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-02 20:06:54,880 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:83 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error on token ",", ; expected
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" ),
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error on token ",", ; expected
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" ),
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error on token ",", ; expected
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1" ),
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-02 20:09:07,874 : WARN  : main :  : Node : String Manipulation : 3:84 : No expression has been set.
+2022-08-02 20:12:18,850 : WARN  : KNIME-Worker-10-String To Number 3:86 :  : AbstractStringToNumberNodeModel : String To Number : 3:86 : Values in 82 cells could not be parsed, first error: 'NA' (RowKey: Row8, Position: 5)
+2022-08-02 20:12:18,851 : WARN  : KNIME-Worker-10-String To Number 3:86 :  : Node : String To Number : 3:86 : Problems occurred, see Console messages.
+2022-08-02 20:17:58,739 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:87 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+The method replace(java.lang.String, java.lang.String, java.lang.String) in the type org.knime.base.node.preproc.stringmanipulation.manipulator.ReplaceManipulator is not applicable for the arguments (java.lang.String, java.lang.String, java.lang.String[])
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col5, "NA", toNull());
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+The method replace(java.lang.String, java.lang.String, java.lang.String) in the type org.knime.base.node.preproc.stringmanipulation.manipulator.ReplaceManipulator is not applicable for the arguments (java.lang.String, java.lang.String, java.lang.String[])
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col5, "NA", toNull());
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+The method replace(java.lang.String, java.lang.String, java.lang.String) in the type org.knime.base.node.preproc.stringmanipulation.manipulator.ReplaceManipulator is not applicable for the arguments (java.lang.String, java.lang.String, java.lang.String[])
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col5, "NA", toNull());
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-02 20:18:22,261 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:87 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+The method replace(java.lang.String, java.lang.String, java.lang.String) in the type org.knime.base.node.preproc.stringmanipulation.manipulator.ReplaceManipulator is not applicable for the arguments (java.lang.String, java.lang.String, java.lang.String[])
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col5, "NA", toNull());
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+The method replace(java.lang.String, java.lang.String, java.lang.String) in the type org.knime.base.node.preproc.stringmanipulation.manipulator.ReplaceManipulator is not applicable for the arguments (java.lang.String, java.lang.String, java.lang.String[])
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col5, "NA", toNull());
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+The method replace(java.lang.String, java.lang.String, java.lang.String) in the type org.knime.base.node.preproc.stringmanipulation.manipulator.ReplaceManipulator is not applicable for the arguments (java.lang.String, java.lang.String, java.lang.String[])
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col5, "NA", toNull());
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-02 20:22:46,679 : WARN  : main :  : Node : Normalizer : 3:88 : Auto-configure: [0, 1] normalization on all numeric columns: "Entrance test", "CCA point", "Math subject score",  ... <5 more>
+2022-08-02 20:25:31,964 : WARN  : main :  : Node : Color Manager : 3:90 : Selected column "Cluster" with default nominal color mapping.
+2022-08-02 20:26:05,422 : WARN  : main :  : Node : Shape Manager : 3:91 : No column selected.
+2022-08-02 20:39:09,919 : WARN  : main :  : Node : Scorer : 3:93 : No columns selected yet.
+2022-08-02 20:49:28,208 : WARN  : main :  : Node : String Manipulation : 3:94 : No expression has been set.
+2022-08-02 20:56:27,960 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:94 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(replace(__col8, "cluster_0" , "moderate learner"),"cluster_1", "motivated learner"),"cluster_2", "Not motivated learner");
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(replace(__col8, "cluster_0" , "moderate learner"),"cluster_1", "motivated learner"),"cluster_2", "Not motivated learner");
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(replace(__col8, "cluster_0" , "moderate learner"),"cluster_1", "motivated learner"),"cluster_2", "Not motivated learner");
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
