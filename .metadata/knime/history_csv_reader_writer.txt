@@ -1,3 +1,5 @@
+file:/C:/Users/abi09/Downloads/skincancer.csv
+file:/C:/Users/abi09/Downloads/Tut8Q1_pHYield.csv
 C:\Users\navee\Documents\SP\SAE\datasets\StudentPerformance (2).csv
 file:/C:/Users/abi09/OneDrive/Desktop/learning/SAE/StudentPerformance.csv
 C:\Users\navee\Downloads\StudentPerformance.csv
