@@ -1,6 +1,6 @@
 
 {
-    "version": "4.6.0.v202206091215",
+    "version": "4.6.1.v202207182243",
     "created": "2022-07-05 21:06",
     "nodestats": {
         "nodes": [
@@ -14,19 +14,19 @@
             },
             {
                 "id": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation",
-                "nrexecs": 18,
+                "nrexecs": 35,
                 "nrfails": 0,
-                "exectime": 675,
-                "nrcreated": 0,
-                "successor": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
+                "exectime": 1314,
+                "nrcreated": 3,
+                "successor": "org.knime.base.node.preproc.rowkey2.RowKeyNodeFactory2#RowID"
             },
             {
                 "id": "org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory#Missing Value",
-                "nrexecs": 6,
+                "nrexecs": 7,
                 "nrfails": 0,
-                "exectime": 553,
-                "nrcreated": 0,
-                "successor": "org.knime.base.node.preproc.pmml.missingval.apply.MissingValueApplyNodeFactory#Missing Value (Apply)"
+                "exectime": 788,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory#Joiner"
             },
             {
                 "id": "org.knime.base.node.preproc.pmml.missingval.apply.MissingValueApplyNodeFactory#Missing Value (Apply)",
@@ -34,14 +34,14 @@
                 "nrfails": 0,
                 "exectime": 447,
                 "nrcreated": 0,
-                "successor": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2#Linear Regression Learner"
+                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
             },
             {
                 "id": "org.knime.base.node.viz.pie.node.fixed.FixedPieNodeFactory#Pie chart (local)",
-                "nrexecs": 7,
+                "nrexecs": 8,
                 "nrfails": 0,
-                "exectime": 164,
-                "nrcreated": 3,
+                "exectime": 208,
+                "nrcreated": 4,
                 "successor": "n/a"
             },
             {
@@ -54,11 +54,11 @@
             },
             {
                 "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
-                "nrexecs": 17,
+                "nrexecs": 24,
                 "nrfails": 0,
-                "exectime": 84,
-                "nrcreated": 2,
-                "successor": "org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy"
+                "exectime": 173,
+                "nrcreated": 5,
+                "successor": "org.knime.base.node.preproc.rowkey2.RowKeyNodeFactory2#RowID"
             },
             {
                 "id": "org.knime.base.node.preproc.binner.BinnerNodeFactory#Numeric Binner",
@@ -110,10 +110,10 @@
             },
             {
                 "id": "org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory#String To Number",
-                "nrexecs": 1,
+                "nrexecs": 3,
                 "nrfails": 0,
-                "exectime": 7,
-                "nrcreated": 1,
+                "exectime": 103,
+                "nrcreated": 2,
                 "successor": "org.knime.base.node.preproc.pmml.missingval.apply.MissingValueApplyNodeFactory#Missing Value (Apply)"
             },
             {
@@ -174,11 +174,11 @@
             },
             {
                 "id": "org.knime.base.node.viz.property.color.ColorManager2NodeFactory#Color Manager",
-                "nrexecs": 4,
+                "nrexecs": 6,
                 "nrfails": 0,
-                "exectime": 26,
-                "nrcreated": 2,
-                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Sunburst Chart"
+                "exectime": 29,
+                "nrcreated": 4,
+                "successor": "org.knime.ext.jfc.node.barchart.JfcBarChartNodeFactory#Bar Chart (JFreeChart)"
             },
             {
                 "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Pie/Donut Chart",
@@ -217,7 +217,7 @@
                 "nrexecs": 1,
                 "nrfails": 0,
                 "exectime": 15,
-                "nrcreated": 1,
+                "nrcreated": 2,
                 "successor": "n/a"
             },
             {
@@ -287,9 +287,9 @@
             {
                 "id": "org.knime.ext.jfc.node.groupbarchart.JfcGroupBarChartNodeFactory#GroupBy Bar Chart (JFreeChart)",
                 "nrexecs": 1,
-                "nrfails": 0,
-                "exectime": 636,
-                "nrcreated": 1,
+                "nrfails": 1,
+                "exectime": 722,
+                "nrcreated": 2,
                 "successor": "n/a"
             },
             {
@@ -325,6 +325,7 @@
                 "successor": "n/a"
             },
             {
+<<<<<<< HEAD
                 "id": "org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeFactory2#Regression Predictor",
                 "nrexecs": 6,
                 "nrfails": 0,
@@ -338,23 +339,147 @@
                 "nrfails": 0,
                 "exectime": 31,
                 "nrcreated": 2,
+=======
+                "id": "org.knime.base.node.mine.cluster.kmeans.ClusterNodeFactory2#k-Means",
+                "nrexecs": 6,
+                "nrfails": 0,
+                "exectime": 718,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
+            },
+            {
+                "id": "org.knime.base.node.preproc.normalize3.Normalizer3NodeFactory#Normalizer",
+                "nrexecs": 6,
+                "nrfails": 0,
+                "exectime": 382,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.preproc.normalize.NormalizerDeNodeFactory#Denormalizer"
+            },
+            {
+                "id": "org.knime.base.node.preproc.normalize.NormalizerDeNodeFactory#Denormalizer",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 189,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation"
+            },
+            {
+                "id": "org.knime.base.node.viz.property.shape.ShapeManagerNodeFactory#Shape Manager",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 2,
+                "nrcreated": 1,
+                "successor": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot"
+            },
+            {
+                "id": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.viz.plotter.scatter.ScatterPlotterNodeFactory#Scatter Plot (local)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 15,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.viz.plotter.parcoord.ParallelCoordinateNodeFactory#Parallel Coordinates (local)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 12,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory#Scorer",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 79,
+                "nrcreated": 1,
+>>>>>>> ac54e88979b693d0b5183cc86725a7b88304e753
                 "successor": "n/a"
             },
             {
                 "id": "org.knime.base.node.viz.plotter.scattermatrix.ScatterMatrixNodeFactory#Scatter Matrix (local)",
                 "nrexecs": 1,
                 "nrfails": 0,
+<<<<<<< HEAD
                 "exectime": 11,
+=======
+                "exectime": 18,
+>>>>>>> ac54e88979b693d0b5183cc86725a7b88304e753
                 "nrcreated": 1,
                 "successor": "n/a"
             },
             {
+<<<<<<< HEAD
                 "id": "org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeFactory#Excel Reader",
                 "nrexecs": 1,
                 "nrfails": 0,
                 "exectime": 93,
                 "nrcreated": 0,
                 "successor": "org.knime.base.node.viz.plotter.scattermatrix.ScatterMatrixNodeFactory#Scatter Matrix (local)"
+=======
+                "id": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory#Joiner",
+                "nrexecs": 8,
+                "nrfails": 0,
+                "exectime": 634,
+                "nrcreated": 2,
+                "successor": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Bar Chart"
+            },
+            {
+                "id": "org.knime.base.node.viz.histogram.node.HistogramNodeFactory#Interactive Histogram (local)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.viz.histogram.node.FixedColumnHistogramNodeFactory#Histogram (local)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 2,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.rowkey2.RowKeyNodeFactory2#RowID",
+                "nrexecs": 5,
+                "nrfails": 1,
+                "exectime": 20,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.preproc.append.row.AppendedRowsNodeFactory#Concatenate"
+            },
+            {
+                "id": "org.knime.ext.jfc.node.barchart.JfcBarChartNodeFactory#Bar Chart (JFreeChart)",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 745,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.append.row.AppendedRowsNodeFactory#Concatenate",
+                "nrexecs": 3,
+                "nrfails": 0,
+                "exectime": 49,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.viz.histogram.node.FixedColumnHistogramNodeFactory#Histogram (local)"
+            },
+            {
+                "id": "org.knime.ext.jfc.node.histogram.JfcHistogramChartNodeFactory#Histogram Chart (JFreeChart)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 131,
+                "nrcreated": 1,
+                "successor": "n/a"
+>>>>>>> ac54e88979b693d0b5183cc86725a7b88304e753
             }
         ],
         "metaNodes": {
@@ -362,16 +487,28 @@
         "wrappedNodes": {
         }
     },
+<<<<<<< HEAD
     "uptime": 54239,
     "workflowsOpened": 58,
     "remoteWorkflowsOpened": 9,
+=======
+    "uptime": 104893,
+    "workflowsOpened": 49,
+    "remoteWorkflowsOpened": 7,
+>>>>>>> ac54e88979b693d0b5183cc86725a7b88304e753
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
+<<<<<<< HEAD
     "launches": 39,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
     "timeSinceLastStart": 2115355,
+=======
+    "launches": 32,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 3356603,
+>>>>>>> ac54e88979b693d0b5183cc86725a7b88304e753
     "crashes": 0,
     "properlyShutDown": true
 }
