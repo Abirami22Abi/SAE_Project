@@ -67,8 +67,8 @@
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_Z1rVyvxnEeyq4MJrblW0zw" containerData="7606" selectedElement="_Z1rVy_xnEeyq4MJrblW0zw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_Z1rVy_xnEeyq4MJrblW0zw" containerData="7312" selectedElement="_Z1rVzPxnEeyq4MJrblW0zw" horizontal="true">
-                <children xsi:type="advanced:Placeholder" xmi:id="_Z1rVzPxnEeyq4MJrblW0zw" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_Z1IjMPxnEeyq4MJrblW0zw"/>
-                <children xsi:type="basic:PartStack" xmi:id="_Z1rVzfxnEeyq4MJrblW0zw" elementId="org.knime.workbench.helpviewMStack" containerData="1000" selectedElement="_Z1rVzvxnEeyq4MJrblW0zw">
+                <children xsi:type="advanced:Placeholder" xmi:id="_Z1rVzPxnEeyq4MJrblW0zw" elementId="org.eclipse.ui.editorss" containerData="8411" ref="_Z1IjMPxnEeyq4MJrblW0zw"/>
+                <children xsi:type="basic:PartStack" xmi:id="_Z1rVzfxnEeyq4MJrblW0zw" elementId="org.knime.workbench.helpviewMStack" containerData="1589" selectedElement="_Z1rVzvxnEeyq4MJrblW0zw">
                   <children xsi:type="advanced:Placeholder" xmi:id="_Z1rVzvxnEeyq4MJrblW0zw" elementId="org.knime.workbench.helpview" ref="_Z1nrYPxnEeyq4MJrblW0zw" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:KNIME Views</tags>
@@ -139,15 +139,15 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_bQ554AgpEe2mHYU48g5nhQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="4: KNIME_project2" iconURI="platform:/plugin/org.knime.workbench.editor/icons/knime.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; partName=&quot;4: KNIME_project2&quot; title=&quot;4: KNIME_project2&quot; tooltip=&quot;4: KNIME_project2&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;knime://LOCAL/KNIME_project2/workflow.knime&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_bQ554AgpEe2mHYU48g5nhQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="3: KNIME_project2" iconURI="platform:/plugin/org.knime.workbench.editor/icons/knime.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; partName=&quot;3: KNIME_project2&quot; title=&quot;3: KNIME_project2&quot; tooltip=&quot;3: KNIME_project2&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;knime://LOCAL/KNIME_project2/workflow.knime&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.knime.workbench.editor.WorkflowEditor</tags>
           <tags>activeOnClose</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_3WdmEBGPEe2eAqKjCTPP-g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="3: SAE_Project_Group3(levi)" iconURI="platform:/plugin/org.knime.workbench.editor/icons/knime.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; partName=&quot;3: SAE_Project_Group3(levi)&quot; title=&quot;3: SAE_Project_Group3(levi)&quot; tooltip=&quot;3: SAE_Project_Group3(levi)&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;knime://LOCAL/SAE_Project_Group3(levi)/workflow.knime&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_3WdmEBGPEe2eAqKjCTPP-g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="4: SAE_Project_Group3(levi)" iconURI="platform:/plugin/org.knime.workbench.editor/icons/knime.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; partName=&quot;4: SAE_Project_Group3(levi)&quot; title=&quot;4: SAE_Project_Group3(levi)&quot; tooltip=&quot;4: SAE_Project_Group3(levi)&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;knime://LOCAL/SAE_Project_Group3(levi)/workflow.knime&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.knime.workbench.editor.WorkflowEditor</tags>
@@ -1293,7 +1293,7 @@
   <addons xmi:id="_YX9alvxnEeyq4MJrblW0zw" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_YX9al_xnEeyq4MJrblW0zw" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_YYSxwPxnEeyq4MJrblW0zw" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_6vZR0BMxEe2eRteM99EeVQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <addons xmi:id="_YbiTAPxnEeyq4MJrblW0zw" elementId="org.knime.product.addon.0" contributorURI="platform:/plugin/org.knime.product" contributionURI="bundleclass://org.knime.product/org.knime.product.rcp.addons.PerspectiveFixAddon"/>
   <addons xmi:id="_YbiTAfxnEeyq4MJrblW0zw" elementId="org.knime.product.addon.1" contributorURI="platform:/plugin/org.knime.product" contributionURI="bundleclass://org.knime.product/org.knime.product.rcp.addons.MenuFixesAddon"/>

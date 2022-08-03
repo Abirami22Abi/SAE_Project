@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <entry key="expression" type="xstring" value="replace(replace(replace($Cluster$, &quot;cluster_0&quot; , &quot;moderate learner&quot;),&quot;cluster_1&quot;, &quot;highly motivated learner&quot;),&quot;cluster_2&quot;, &quot;not motivated learner&quot;)"/>
-        <entry key="replaced_column" type="xstring" value="lvl_motivation"/>
+        <entry key="replaced_column" type="xstring" value="lvl_motivation_M2"/>
         <entry key="append_column" type="xboolean" value="false"/>
         <entry key="test_compilation_on_dialog_close" type="xboolean" value="true"/>
         <entry key="insert_missing_as_null" type="xboolean" value="false"/>
@@ -40,6 +40,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="03d77d48-d300-4829-9ec8-ec666c88e51b"/>
+        <entry key="file_store_id" type="xstring" value="47783c27-06d8-4291-86e5-e1a05bfad92e"/>
     </config>
 </config>
