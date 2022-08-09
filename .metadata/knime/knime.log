@@ -2883,3 +2883,68 @@ org.knime.core.node.InvalidSettingsException: Config for key "model" not found.
 2022-08-03 22:02:18,193 : WARN  : KNIME-Worker-50-Histogram Chart (JFreeChart) 4:113 :  : Node : Histogram Chart (JFreeChart) : 4:113 : Missing values are ignored!
 2022-08-03 22:02:18,194 : WARN  : KNIME-Worker-50-Histogram Chart (JFreeChart) 4:113 :  : Node : Histogram Chart (JFreeChart) : 4:113 : Missing values are ignored!
 >>>>>>> ac54e88979b693d0b5183cc86725a7b88304e753
+2022-08-04 02:14:50,832 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-04 02:14:50,833 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-04 02:14:50,834 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-04 02:14:50,834 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-04 02:14:50,834 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-04 02:14:50,834 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-04 02:14:50,834 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-08-04 02:14:50,834 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-08-04 02:14:50,834 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-04 02:14:50,835 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-04 02:15:09,159 : WARN  : Worker-0: Workflow Coach loader :  : NodeTimer$GlobalNodeStats :  :  : Failed reading node usage file. Starting counts from scratch.
+javax.json.stream.JsonParsingException: Unexpected char 60 at (line no=328, column no=1, offset=13732)
+	at org.glassfish.json.JsonTokenizer.unexpectedChar(JsonTokenizer.java:601)
+	at org.glassfish.json.JsonTokenizer.nextToken(JsonTokenizer.java:418)
+	at org.glassfish.json.JsonParserImpl$ObjectContext.getNextEvent(JsonParserImpl.java:466)
+	at org.glassfish.json.JsonParserImpl.next(JsonParserImpl.java:376)
+	at org.glassfish.json.JsonParserImpl.getObject(JsonParserImpl.java:335)
+	at org.glassfish.json.JsonParserImpl.getValue(JsonParserImpl.java:182)
+	at org.glassfish.json.JsonParserImpl.getArray(JsonParserImpl.java:328)
+	at org.glassfish.json.JsonParserImpl.getValue(JsonParserImpl.java:180)
+	at org.glassfish.json.JsonParserImpl.getObject(JsonParserImpl.java:341)
+	at org.glassfish.json.JsonParserImpl.getValue(JsonParserImpl.java:182)
+	at org.glassfish.json.JsonParserImpl.getObject(JsonParserImpl.java:341)
+	at org.glassfish.json.JsonParserImpl.getObject(JsonParserImpl.java:173)
+	at org.glassfish.json.JsonReaderImpl.readObject(JsonReaderImpl.java:112)
+	at org.knime.core.node.workflow.NodeTimer$GlobalNodeStats.readFromFile(NodeTimer.java:649)
+	at org.knime.core.node.workflow.NodeTimer$GlobalNodeStats.<init>(NodeTimer.java:200)
+	at org.knime.core.node.workflow.NodeTimer.<clinit>(NodeTimer.java:785)
+	at org.knime.core.node.workflow.NodeContainer.<init>(NodeContainer.java:178)
+	at org.knime.core.node.workflow.NodeContainer.<init>(NodeContainer.java:265)
+	at org.knime.core.node.workflow.WorkflowManager.<init>(WorkflowManager.java:467)
+	at org.knime.core.node.workflow.WorkflowManager.<clinit>(WorkflowManager.java:386)
+	at org.knime.workbench.repository.RepositoryFactory.loadMetaNode(RepositoryFactory.java:204)
+	at org.knime.workbench.repository.RepositoryFactory.createMetaNode(RepositoryFactory.java:154)
+	at org.knime.workbench.repository.RepositoryManager.readMetanodes(RepositoryManager.java:227)
+	at org.knime.workbench.repository.RepositoryManager.readRepository(RepositoryManager.java:183)
+	at org.knime.workbench.repository.RepositoryManager.getRoot(RepositoryManager.java:577)
+	at org.knime.workbench.repository.RepositoryManager.getRoot(RepositoryManager.java:590)
+	at org.knime.workbench.workflowcoach.ui.WorkflowCoachView$3.run(WorkflowCoachView.java:268)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-04 02:16:13,420 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-04 02:16:38,368 : WARN  : ModalContext :  : Node : Value Counter : 3:42 : Column 'Final score_binned' does not exist
+2022-08-04 02:16:38,371 : WARN  : ModalContext :  : Node : Value Counter : 3:49 : Column 'Final score_binned' does not exist
+2022-08-09 16:43:04,986 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-09 16:43:04,987 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-09 16:43:04,988 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-09 16:43:04,988 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-09 16:43:04,988 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-09 16:43:04,988 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-09 16:43:04,988 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-08-09 16:43:04,988 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-08-09 16:43:04,988 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-09 16:43:04,988 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-09 16:43:30,725 : WARN  : ModalContext :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
+2022-08-09 16:43:30,725 : WARN  : ModalContext :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
+2022-08-09 16:47:54,905 : WARN  : main :  : Node : String Manipulation : 6:83 : No such column: Disciplinary warning (at line 1)
