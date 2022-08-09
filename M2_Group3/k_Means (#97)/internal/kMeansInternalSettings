@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="kMeans">
+    <entry key="dimensions" type="xint" value="10"/>
+    <entry key="ignoredColumns" type="xint" value="0"/>
+    <config key="clusterCoverage">
+        <entry key="array-size" type="xint" value="3"/>
+        <entry key="0" type="xint" value="134"/>
+        <entry key="1" type="xint" value="147"/>
+        <entry key="2" type="xint" value="33"/>
+    </config>
+    <config key="kMeansCluster0">
+        <entry key="array-size" type="xint" value="10"/>
+        <entry key="0" type="xdouble" value="0.6652452025586353"/>
+        <entry key="1" type="xdouble" value="0.0671641791044776"/>
+        <entry key="2" type="xdouble" value="0.829578628271116"/>
+        <entry key="3" type="xdouble" value="0.6152706441998008"/>
+        <entry key="4" type="xdouble" value="0.6474295190713104"/>
+        <entry key="5" type="xdouble" value="0.6624694373489941"/>
+        <entry key="6" type="xdouble" value="0.0"/>
+        <entry key="7" type="xdouble" value="0.5895252879696856"/>
+        <entry key="8" type="xdouble" value="0.7411749222535268"/>
+        <entry key="9" type="xdouble" value="0.5862246592389819"/>
+    </config>
+    <config key="kMeansCluster1">
+        <entry key="array-size" type="xint" value="10"/>
+        <entry key="0" type="xdouble" value="0.3119533527696792"/>
+        <entry key="1" type="xdouble" value="0.12018140589569162"/>
+        <entry key="2" type="xdouble" value="0.9209637273391696"/>
+        <entry key="3" type="xdouble" value="0.72079359161439"/>
+        <entry key="4" type="xdouble" value="0.7832199546485252"/>
+        <entry key="5" type="xdouble" value="0.7913422555993943"/>
+        <entry key="6" type="xdouble" value="0.0"/>
+        <entry key="7" type="xdouble" value="0.7899067174721097"/>
+        <entry key="8" type="xdouble" value="0.8035086666933263"/>
+        <entry key="9" type="xdouble" value="0.7542559407210528"/>
+    </config>
+    <config key="kMeansCluster2">
+        <entry key="array-size" type="xint" value="10"/>
+        <entry key="0" type="xdouble" value="0.7445887445887446"/>
+        <entry key="1" type="xdouble" value="0.06060606060606061"/>
+        <entry key="2" type="xdouble" value="0.59457839097208"/>
+        <entry key="3" type="xdouble" value="0.370773004233767"/>
+        <entry key="4" type="xdouble" value="0.38855218855218865"/>
+        <entry key="5" type="xdouble" value="0.3625853373211917"/>
+        <entry key="6" type="xdouble" value="0.09090909090909091"/>
+        <entry key="7" type="xdouble" value="0.24115477636604396"/>
+        <entry key="8" type="xdouble" value="0.4810135977673534"/>
+        <entry key="9" type="xdouble" value="0.22084806557393308"/>
+    </config>
+    <config key="FeatureNames">
+        <entry key="array-size" type="xint" value="10"/>
+        <entry key="0" type="xstring" value="Entrance test"/>
+        <entry key="1" type="xstring" value="CCA point"/>
+        <entry key="2" type="xstring" value="Math subject score"/>
+        <entry key="3" type="xstring" value="Langauge &amp; Comms. Subject score"/>
+        <entry key="4" type="xstring" value="IT subject score"/>
+        <entry key="5" type="xstring" value="Science subject score"/>
+        <entry key="6" type="xstring" value="Disciplinary warning"/>
+        <entry key="7" type="xstring" value="Final score"/>
+        <entry key="8" type="xstring" value="Min. subject score"/>
+        <entry key="9" type="xstring" value="Overall first sem. score"/>
+    </config>
+</config>

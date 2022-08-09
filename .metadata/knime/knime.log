@@ -2948,3 +2948,19 @@ javax.json.stream.JsonParsingException: Unexpected char 60 at (line no=328, colu
 2022-08-09 16:43:30,725 : WARN  : ModalContext :  : Node : Value Counter : 4:42 : Column 'Final score_binned' does not exist
 2022-08-09 16:43:30,725 : WARN  : ModalContext :  : Node : Value Counter : 4:49 : Column 'Final score_binned' does not exist
 2022-08-09 16:47:54,905 : WARN  : main :  : Node : String Manipulation : 6:83 : No such column: Disciplinary warning (at line 1)
+2022-08-09 16:56:50,694 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-09 16:56:50,694 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-09 16:56:50,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-09 16:56:50,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-09 16:56:50,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-09 16:56:50,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-09 16:56:50,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-08-09 16:56:50,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-08-09 16:56:50,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-09 16:56:50,695 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-09 16:57:45,607 : WARN  : ModalContext :  : Node : String Manipulation : 3:83 : No such column: Disciplinary warning (at line 1)
+2022-08-09 16:59:38,620 : WARN  : KNIME-Worker-6-Table Creator 3:1 :  : Node : String Manipulation : 3:83 : No such column: Disciplinary warning (at line 1)
+2022-08-09 16:59:38,631 : WARN  : KNIME-Worker-7-Column Filter 3:82 :  : Node : String Manipulation : 3:83 : No such column: Disciplinary warning (at line 1)
+2022-08-09 17:14:46,529 : WARN  : main :  : Node : CSV Writer : 4:113 : Please specify a file
+2022-08-09 17:20:10,614 : WARN  : main :  : Node : Parallel Coordinates (local) : 6:92 : Some columns are ignored: bounds missing.
+2022-08-09 17:20:10,614 : WARN  : main :  : Node : Scatter Matrix (local) : 6:93 : Some columns are ignored: bounds missing.
