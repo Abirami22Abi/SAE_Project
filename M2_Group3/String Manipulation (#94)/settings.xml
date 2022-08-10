@@ -6,12 +6,12 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="return_type" type="xstring" value="java.lang.String"/>
-        <entry key="expression" type="xstring" value="replace(replace(replace($Cluster$, &quot;cluster_0&quot; , &quot;moderate learner&quot;),&quot;cluster_1&quot;, &quot;highly motivated learner&quot;),&quot;cluster_2&quot;, &quot;not motivated learner&quot;)"/>
+        <entry key="expression" type="xstring" value="replace(replace(replace($Cluster$, &quot;cluster_0&quot; , &quot;highly motivated learner&quot;),&quot;cluster_1&quot;, &quot;moderate learner&quot;),&quot;cluster_2&quot;, &quot;not motivated learner&quot;)"/>
         <entry key="replaced_column" type="xstring" value="lvl_motivation_M2"/>
         <entry key="append_column" type="xboolean" value="false"/>
-        <entry key="insert_missing_as_null" type="xboolean" value="false"/>
         <entry key="test_compilation_on_dialog_close" type="xboolean" value="true"/>
+        <entry key="insert_missing_as_null" type="xboolean" value="false"/>
+        <entry key="return_type" type="xstring" value="java.lang.String"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
@@ -40,6 +40,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="91dc90fe-5269-4185-93d6-927497604aa3"/>
+        <entry key="file_store_id" type="xstring" value="f5474a23-3a08-4f23-b60e-8aabd6764847"/>
     </config>
 </config>
