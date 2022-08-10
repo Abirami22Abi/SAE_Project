@@ -2964,3 +2964,23 @@ javax.json.stream.JsonParsingException: Unexpected char 60 at (line no=328, colu
 2022-08-09 17:14:46,529 : WARN  : main :  : Node : CSV Writer : 4:113 : Please specify a file
 2022-08-09 17:20:10,614 : WARN  : main :  : Node : Parallel Coordinates (local) : 6:92 : Some columns are ignored: bounds missing.
 2022-08-09 17:20:10,614 : WARN  : main :  : Node : Scatter Matrix (local) : 6:93 : Some columns are ignored: bounds missing.
+2022-08-09 17:23:40,074 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-09 17:23:40,076 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-09 17:23:40,076 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-09 17:23:40,077 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-09 17:23:40,077 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-09 17:23:40,077 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-09 17:23:40,077 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-08-09 17:23:40,077 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-08-09 17:23:40,077 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-09 17:23:40,078 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-10 10:44:45,225 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  

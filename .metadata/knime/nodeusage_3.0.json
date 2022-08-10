@@ -118,9 +118,9 @@
             },
             {
                 "id": "org.knime.base.node.preproc.append.row.AppendedRowsNodeFactory#Concatenate",
-                "nrexecs": 1,
+                "nrexecs": 2,
                 "nrfails": 0,
-                "exectime": 0,
+                "exectime": 47,
                 "nrcreated": 0,
                 "successor": "n/a"
             },
@@ -162,16 +162,16 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 351817,
-    "workflowsOpened": 16,
+    "uptime": 484594,
+    "workflowsOpened": 20,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
-    "launches": 4,
+    "launches": 6,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 1407270,
+    "timeSinceLastStart": 2907568,
     "crashes": 0,
     "properlyShutDown": true
 }
