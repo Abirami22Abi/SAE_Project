@@ -3004,3 +3004,299 @@ javax.json.stream.JsonParsingException: Unexpected char 60 at (line no=328, colu
 2022-08-11 15:28:53,011 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
 2022-08-11 15:28:53,011 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
 2022-08-11 15:28:53,011 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-11 16:40:12,205 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-11 16:40:12,208 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-11 16:40:12,209 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-11 16:40:12,209 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-11 16:40:12,209 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-11 16:40:12,209 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-11 16:40:12,210 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-08-11 16:40:12,210 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-08-11 16:40:12,210 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-11 16:40:12,210 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-12 20:44:23,220 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2022-08-12 20:44:23,221 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2022-08-12 20:44:23,221 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2022-08-12 20:44:23,221 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2022-08-12 20:44:23,221 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2022-08-12 20:44:23,222 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2022-08-12 20:44:23,222 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2022-08-12 20:44:23,222 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2022-08-12 20:44:23,222 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2022-08-12 20:44:23,222 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2022-08-12 20:50:47,166 : ERROR : KNIME-Worker-9-Linear Regression Learner 3:117 :  : Node : Linear Regression Learner : 3:117 : Execute failed: Missing value support disabled, see node configuration dialog.
+java.lang.IllegalStateException: Missing value support disabled, see node configuration dialog.
+	at org.knime.base.node.mine.regression.RegressionTrainingRow$MissingHandling.isMissing(RegressionTrainingRow.java:93)
+	at org.knime.base.node.mine.regression.RegressionTrainingRow.<init>(RegressionTrainingRow.java:184)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:138)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:1)
+	at org.knime.base.node.mine.regression.linear2.learner.Learner.processTable(Learner.java:176)
+	at org.knime.base.node.mine.regression.linear2.learner.Learner.perform(Learner.java:114)
+	at org.knime.base.node.mine.regression.linear2.learner.LinReg2Learner.execute(LinReg2Learner.java:150)
+	at org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeModel.execute(LinReg2LearnerNodeModel.java:169)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-08-12 20:51:14,931 : WARN  : KNIME-Worker-10-Linear Regression Learner 3:117 :  : Node : Linear Regression Learner : 3:117 : not enough data (3 rows) for this many predictors (10 predictors)
+2022-08-12 20:52:26,079 : WARN  : KNIME-Worker-11-Linear Regression Learner 3:117 :  : Node : Linear Regression Learner : 3:117 : not enough data (6 rows) for this many predictors (8 predictors)
+2022-08-12 20:52:49,492 : WARN  : main :  : Node : Linear Regression Learner : 3:117 : The target is not in the input.
+2022-08-12 21:18:51,423 : WARN  : KNIME-Worker-12-Linear Regression Learner 3:118 :  : Node : Linear Regression Learner : 3:118 : not enough data (6 rows) for this many predictors (8 predictors)
+2022-08-12 21:20:00,458 : WARN  : KNIME-Worker-13-Linear Regression Learner 3:119 :  : LinReg2Learner : Linear Regression Learner : 3:119 : Column "Science subject score" has too many different values - will be ignored during training
+2022-08-12 21:20:00,502 : WARN  : KNIME-Worker-13-Linear Regression Learner 3:119 :  : Node : Linear Regression Learner : 3:119 : Column "Science subject score" has too many different values - will be ignored during training
+2022-08-12 21:25:59,786 : ERROR : KNIME-Worker-15-Decision Tree Predictor 3:121 :  : DecTreePredictorNodeModel : Decision Tree Predictor : 3:121 : Decision Tree evaluation failed: No tree model found.
+2022-08-12 21:25:59,787 : ERROR : KNIME-Worker-15-Decision Tree Predictor 3:121 :  : Node : Decision Tree Predictor : 3:121 : Execute failed: Decision Tree evaluation failed: No tree model found.
+java.lang.RuntimeException: Decision Tree evaluation failed: No tree model found.
+	at org.knime.base.node.mine.decisiontree2.predictor2.DecTreePredictorNodeModel.execute(DecTreePredictorNodeModel.java:243)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-08-12 21:29:20,752 : WARN  : main :  : Node : Decision Tree Learner : 3:123 : Table contains no nominal attribute for classification.
+2022-08-12 21:29:35,507 : WARN  : main :  : Node : Linear Regression Learner : 3:124 : The target is not in the input.
+2022-08-12 21:30:27,120 : WARN  : main :  : Node : Decision Tree Learner : 3:125 : Table contains no nominal attribute for classification.
+2022-08-12 21:34:13,001 : ERROR : KNIME-Worker-33-Naive Bayes Predictor 3:126 :  : Node : Naive Bayes Predictor : 3:126 : Execute failed: Node not properly configured. No Naive Bayes Model available.
+java.lang.Exception: Node not properly configured. No Naive Bayes Model available.
+	at org.knime.base.node.mine.bayes.naivebayes.predictor4.NaiveBayesPredictorNodeModel3.execute(NaiveBayesPredictorNodeModel3.java:154)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:595)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-08-12 21:51:24,762 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:117 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1")
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1")
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error, insert ";" to complete BlockStatements
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace(__col6, "Y" , "1")
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-12 21:52:00,497 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:117 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1");
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1");
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1");
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-12 21:52:11,759 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:117 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-12 21:52:32,407 : WARN  : main :  : WrappedNodeDialog : String Manipulation : 3:117 : failed to apply settings: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+org.knime.core.node.InvalidSettingsException: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:419)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+Syntax error on token "(", Name expected after this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+
+ERROR at line 66
+Syntax error on token ")", delete this token
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return replace((__col6, "N" , "0"), "Y" , "1"));
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeDialog.saveSettingsTo(StringManipulationNodeDialog.java:417)
+	... 17 more
+2022-08-12 22:02:51,678 : WARN  : main :  : Node : Partitioning : 4:89 : No sampling method selected
+2022-08-12 22:03:52,788 : WARN  : main :  : Node : Regression Predictor : 4:90 : The table for prediction does not contain the column "Entrance test".
+2022-08-12 22:04:06,388 : WARN  : main :  : Node : Regression Predictor : 4:90 : The table for prediction does not contain the column "Entrance test".
+2022-08-12 22:04:08,968 : WARN  : KNIME-Worker-59-Linear Regression Learner 4:89 :  : Node : Regression Predictor : 4:90 : The table for prediction does not contain the column "Entrance test".
+2022-08-12 22:04:18,380 : WARN  : main :  : Node : Regression Predictor : 4:90 : The table for prediction does not contain the column "Entrance test".
+2022-08-12 22:04:49,054 : WARN  : main :  : Node : Scorer : 4:91 : No columns selected yet.
+2022-08-12 22:04:55,307 : WARN  : main :  : WrappedNodeDialog : Scorer : 4:91 : failed to apply settings: First and second column cannot be the same.
+org.knime.core.node.InvalidSettingsException: First and second column cannot be the same.
+	at org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeDialog.saveSettingsTo(AccuracyScorer2NodeDialog.java:349)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:540)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:779)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-08-12 22:06:42,545 : WARN  : main :  : Node : SOTA Predictor : 4:92 : Given model is trained on data without a class column, which makes prediction pretty odd. Predicted class is set to "NoClassDefined".
+2022-08-12 22:06:45,200 : WARN  : main :  : Node : SOTA Predictor : 4:92 : Given model is trained on data without a class column, which makes prediction pretty odd. Predicted class is set to "NoClassDefined".
+2022-08-12 22:06:51,538 : WARN  : KNIME-Worker-76-SOTA Learner 4:93 :  : Node : SOTA Predictor : 4:92 : Given model is trained on data without a class column, which makes prediction pretty odd. Predicted class is set to "NoClassDefined".
