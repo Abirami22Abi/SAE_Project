@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="expression" type="xstring" value="replace(replace(replace($Cluster$, &quot;cluster_0&quot; , &quot;highly motivated learner&quot;),&quot;cluster_1&quot;, &quot;moderate learner&quot;),&quot;cluster_2&quot;, &quot;not motivated learner&quot;)"/>
+        <entry key="expression" type="xstring" value="replace(replace(replace($Cluster$, &quot;cluster_0&quot; , &quot;moderate learner&quot;),&quot;cluster_1&quot;, &quot;highly motivated learner&quot;),&quot;cluster_2&quot;, &quot;not motivated learner&quot;)"/>
         <entry key="replaced_column" type="xstring" value="lvl_motivation_M1"/>
         <entry key="append_column" type="xboolean" value="false"/>
         <entry key="test_compilation_on_dialog_close" type="xboolean" value="true"/>
@@ -40,6 +40,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="aaec7d5e-878d-4abb-b219-ed9da6c48488"/>
+        <entry key="file_store_id" type="xstring" value="d59bda2a-3159-4e9e-86f0-f4b14bc29967"/>
     </config>
 </config>
