@@ -7,21 +7,10 @@
     </config>
     <config key="model">
         <config key="column-filter">
-            <config key="datatype">
-                <config key="typelist">
-                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
-                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
-                </config>
-            </config>
-            <config key="name_pattern">
-                <entry key="pattern" type="xstring" value=""/>
-                <entry key="excludeMatching" type="xboolean" value="false"/>
-                <entry key="type" type="xstring" value="Wildcard"/>
-                <entry key="caseSensitive" type="xboolean" value="true"/>
+            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="included_names">
+                <entry key="array-size" type="xint" value="1"/>
+                <entry key="0" type="xstring" value="lvl_motivation_M2"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="9"/>
@@ -35,12 +24,23 @@
                 <entry key="7" type="xstring" value="Final score"/>
                 <entry key="8" type="xstring" value="Cluster"/>
             </config>
-            <config key="included_names">
-                <entry key="array-size" type="xint" value="1"/>
-                <entry key="0" type="xstring" value="lvl_motivation_M2"/>
-            </config>
             <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
-            <entry key="filter-type" type="xstring" value="STANDARD"/>
+            <config key="name_pattern">
+                <entry key="pattern" type="xstring" value=""/>
+                <entry key="type" type="xstring" value="Wildcard"/>
+                <entry key="caseSensitive" type="xboolean" value="true"/>
+                <entry key="excludeMatching" type="xboolean" value="false"/>
+            </config>
+            <config key="datatype">
+                <config key="typelist">
+                    <entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+                    <entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+                </config>
+            </config>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -50,11 +50,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202206100904"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.1.v202207182243"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202206100904"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.1.v202207182243"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Column Filter"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -70,6 +70,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="383edfac-2828-4a5a-b700-4f934bb29dbc"/>
+        <entry key="file_store_id" type="xstring" value="81325a70-a0d9-4029-91c6-422a60aea0e8"/>
     </config>
 </config>

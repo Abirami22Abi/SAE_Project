@@ -6,103 +6,103 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="graph_height" type="xint" value="600"/>
+        <config key="graph_title_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMN_string_disact"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="graph_title" type="xstring" value="Title"/>
         <entry key="graph_title_BOOL" type="xboolean" value="false"/>
+        <config key="graph_height_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="graph_height" type="xint" value="600"/>
+        <config key="graph_width_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="graph_width" type="xint" value="400"/>
         <config key="CFG_TYPE_IMAGE_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <config key="CFG_X_COLUMNS_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_filterString"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="graph_title" type="xstring" value="Title"/>
         <entry key="CFG_TYPE_IMAGE" type="xstring" value="PNG"/>
-        <entry key="CFG_X_LABEL_BOOL" type="xboolean" value="false"/>
-        <config key="CFG_X_LABEL_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMN_string_disact"/>
+        <config key="CFG_BackColor_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_color"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="range" type="xdouble" value="0.0"/>
-        <entry key="CFG_SHOW_HISTORY" type="xboolean" value="true"/>
+        <config key="CFG_BackColor">
+            <entry key="Red" type="xint" value="255"/>
+            <entry key="Green" type="xint" value="255"/>
+            <entry key="Blue" type="xint" value="255"/>
+            <entry key="Alpha" type="xint" value="255"/>
+        </config>
+        <config key="CFG_PlotColor_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_color"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <config key="CFG_PlotColor">
+            <entry key="Red" type="xint" value="191"/>
+            <entry key="Green" type="xint" value="191"/>
+            <entry key="Blue" type="xint" value="191"/>
+            <entry key="Alpha" type="xint" value="255"/>
+        </config>
+        <config key="CFG_PlotAlpha_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="CFG_PlotAlpha" type="xdouble" value="0.2"/>
+        <config key="CFG_FSScale_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="CFG_FSScale" type="xdouble" value="1.0"/>
         <config key="CFG_SHOW_HISTORY_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
-        <entry key="CFG_FSScale" type="xdouble" value="1.0"/>
+        <entry key="CFG_SHOW_HISTORY" type="xboolean" value="true"/>
+        <config key="CFG_X_LABEL_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMN_string_disact"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="CFG_X_LABEL" type="xstring" value="value"/>
+        <entry key="CFG_X_LABEL_BOOL" type="xboolean" value="false"/>
+        <config key="CFG_Y_LABEL_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMN_string_disact"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="CFG_Y_LABEL" type="xstring" value="No. of occurrences in column"/>
+        <entry key="CFG_Y_LABEL_BOOL" type="xboolean" value="false"/>
+        <config key="range_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_double"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
+        <entry key="range" type="xdouble" value="0.0"/>
+        <config key="CFG_X_COLUMNS_Internals">
+            <entry key="SettingsModelID" type="xstring" value="SMID_filterString"/>
+            <entry key="EnabledStatus" type="xboolean" value="true"/>
+        </config>
         <config key="CFG_X_COLUMNS">
-            <config key="ExclList">
-                <entry key="array-size" type="xint" value="0"/>
-            </config>
-            <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
             <config key="InclList">
                 <entry key="array-size" type="xint" value="2"/>
                 <entry key="0" type="xstring" value="lvl_motivation_M2"/>
                 <entry key="1" type="xstring" value="lvl_motivation_M1"/>
             </config>
+            <config key="ExclList">
+                <entry key="array-size" type="xint" value="0"/>
+            </config>
+            <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
         </config>
-        <config key="CFG_BackColor_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_color"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="graph_width_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="CFG_PlotAlpha" type="xdouble" value="0.2"/>
-        <entry key="graph_width" type="xint" value="400"/>
-        <entry key="CFG_Y_LABEL" type="xstring" value="No. of occurrences in column"/>
         <config key="CFG_Color_Internals">
             <entry key="SettingsModelID" type="xstring" value="SMID_color"/>
             <entry key="EnabledStatus" type="xboolean" value="true"/>
         </config>
         <config key="CFG_Color">
             <entry key="Red" type="xint" value="255"/>
-            <entry key="Alpha" type="xint" value="255"/>
-            <entry key="Blue" type="xint" value="175"/>
             <entry key="Green" type="xint" value="175"/>
-        </config>
-        <config key="range_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_double"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="CFG_Y_LABEL_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMN_string_disact"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="graph_title_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMN_string_disact"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="CFG_PlotColor_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_color"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="CFG_BackColor">
-            <entry key="Red" type="xint" value="255"/>
+            <entry key="Blue" type="xint" value="175"/>
             <entry key="Alpha" type="xint" value="255"/>
-            <entry key="Blue" type="xint" value="255"/>
-            <entry key="Green" type="xint" value="255"/>
-        </config>
-        <config key="CFG_FSScale_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_double"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="CFG_PlotAlpha_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_double"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <entry key="CFG_Y_LABEL_BOOL" type="xboolean" value="false"/>
-        <entry key="CFG_X_LABEL" type="xstring" value="value"/>
-        <config key="graph_height_Internals">
-            <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
-            <entry key="EnabledStatus" type="xboolean" value="true"/>
-        </config>
-        <config key="CFG_PlotColor">
-            <entry key="Red" type="xint" value="191"/>
-            <entry key="Alpha" type="xint" value="255"/>
-            <entry key="Blue" type="xint" value="191"/>
-            <entry key="Green" type="xint" value="191"/>
         </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -134,6 +134,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="cf8b4895-bf67-411b-816b-1ef7aa8a809f"/>
+        <entry key="file_store_id" type="xstring" value="d41e825f-6d52-4c6b-ac09-b46eaa3bbb06"/>
     </config>
 </config>
