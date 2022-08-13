@@ -6,16 +6,6 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <config key="dataTypeSettings">
-            <config key="org.knime.core.data.def.IntCell">
-                <config key="settings"/>
-                <entry key="factoryID" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.handlers.DoNothingMissingCellHandlerFactory"/>
-            </config>
-            <config key="org.knime.core.data.def.DoubleCell">
-                <config key="settings"/>
-                <entry key="factoryID" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.handlers.DoNothingMissingCellHandlerFactory"/>
-            </config>
-        </config>
         <config key="columnSettings">
             <config key="0">
                 <config key="colNames">
@@ -23,9 +13,19 @@
                     <entry key="0" type="xstring" value="Science subject score"/>
                 </config>
                 <config key="settings">
-                    <config key="settings"/>
                     <entry key="factoryID" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.handlers.DoubleMeanMissingCellHandlerFactory"/>
+                    <config key="settings"/>
                 </config>
+            </config>
+        </config>
+        <config key="dataTypeSettings">
+            <config key="org.knime.core.data.def.IntCell">
+                <entry key="factoryID" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.handlers.DoNothingMissingCellHandlerFactory"/>
+                <config key="settings"/>
+            </config>
+            <config key="org.knime.core.data.def.DoubleCell">
+                <entry key="factoryID" type="xstring" value="org.knime.base.node.preproc.pmml.missingval.handlers.DoNothingMissingCellHandlerFactory"/>
+                <config key="settings"/>
             </config>
         </config>
     </config>
@@ -36,11 +36,11 @@
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.6.0.v202206100904"/>
+    <entry key="node-bundle-version" type="xstring" value="4.6.1.v202207182243"/>
     <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.6.0.v202206100904"/>
+    <entry key="node-feature-version" type="xstring" value="4.6.1.v202207182243"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Missing Value"/>
     <entry key="hasContent" type="xboolean" value="true"/>
@@ -50,7 +50,7 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 314, Cols: 8"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 314, Cols: 10"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
@@ -65,6 +65,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="fca628f0-592c-4de5-ae14-c098e8d5a214"/>
+        <entry key="file_store_id" type="xstring" value="5d86fbe9-f614-4762-9f1c-68d0300e5c6c"/>
     </config>
 </config>
