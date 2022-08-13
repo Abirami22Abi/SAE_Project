@@ -216,19 +216,19 @@
                 <config key="0">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="moderate learner M2"/>
+                        <entry key="StringCell" type="xstring" value="moderate learner M1"/>
                     </config>
                 </config>
                 <config key="1">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="highly motivaated learner M2"/>
+                        <entry key="StringCell" type="xstring" value="highly motivaated learner M1"/>
                     </config>
                 </config>
                 <config key="2">
                     <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
                     <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="not motivated learner M2"/>
+                        <entry key="StringCell" type="xstring" value="not motivated learner M1"/>
                     </config>
                 </config>
             </config>

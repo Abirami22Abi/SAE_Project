@@ -287,7 +287,7 @@
         <config key="meta_data"/>
     </config>
     <config key="column_spec_11">
-        <entry key="column_name" type="xstring" value="lvl_motivation_M1"/>
+        <entry key="column_name" type="xstring" value="lvl_motivation_M2"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
         </config>

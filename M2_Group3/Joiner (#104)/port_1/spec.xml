@@ -3,7 +3,7 @@
     <entry key="spec_name" type="xstring" value="default"/>
     <entry key="number_columns" type="xint" value="2"/>
     <config key="column_spec_0">
-        <entry key="column_name" type="xstring" value="lvl_motivation_M2"/>
+        <entry key="column_name" type="xstring" value="lvl_motivation_M1"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
         </config>
@@ -37,7 +37,7 @@
         <config key="meta_data"/>
     </config>
     <config key="column_spec_1">
-        <entry key="column_name" type="xstring" value="lvl_motivation_M1"/>
+        <entry key="column_name" type="xstring" value="lvl_motivation_M2"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
         </config>
